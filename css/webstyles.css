@@ -1,0 +1,411 @@
+:root {
+  --dark-blue: #001728;
+  --light-gray: white;
+  --font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+body {
+  margin: 30px 15%;
+}
+
+small {
+  font-weight: 100;
+}
+
+h1{
+  font-family: var(--font-family);
+  font-size: 25px;
+  margin: 40 0 40 40;
+}
+
+h2 {
+  font-family: var(--font-family);
+  font-weight: bold;
+  text-transform: uppercase;
+  color: var(--dark-blue);
+  font-size: 20px;
+  margin: 0 0 10px 0;
+}
+
+h2:not(:first-child) {
+  margin-top: 20px;
+}
+
+h2 > p {
+  display: inline;
+  text-transform: none; 
+  font-weight: 100;
+}
+
+h3 {
+  font-family: var(--font-family);
+  font-size: 15px;
+  margin: 10px 0 10px 0;
+}
+
+p {
+  font-family: var(--font-family);
+  text-align: justify;
+  font-size: 15px;
+  margin: 0px 0px 10px 0px;
+}
+
+a { 
+  color: black; 
+  font-family: var(--font-family);
+}
+
+details, summary { 
+  font-family: var(--font-family);
+}
+
+p a:hover {
+  background-color: var(--dark-blue);
+  color: white;
+}
+
+details summary::-webkit-details-marker {
+  display: none;
+}
+
+.button {
+  border: solid 1.5px var(--dark-blue);
+}
+
+
+/* LISTS */ 
+
+dl {
+  margin: 0px;
+  padding: 0px;
+  width: 100%;
+  font-family: var(--font-family);
+  font-size: 15px;
+}
+
+dt {
+  font-weight: bold;
+  padding: 0 0 5px 0;
+}
+
+#service dt {
+  font-weight: 100 !important;
+}
+
+dd {
+  margin: 0px 0px 10px 0px;
+  padding-left: 30px;
+  overflow: hidden;
+}
+
+dd .amount {
+  float: right;
+  font-style: italic;
+  padding-right: 10px;
+}
+
+dd .talk-timeplace {
+  float: right;
+  display: block;
+  position: sticky;
+  font-style: italic;
+  padding-right: 10px;
+}
+
+/* FLEX STRUCTURE FOR OVERALL PAGE */
+
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  column-gap: 20px;
+  row-gap: 20px;
+}
+
+.flex-container > div {
+  background-color: var(--light-gray);
+  width: 45%;
+  min-width: 300px;
+}
+
+#about-me {
+  flex-basis: 100%;
+}
+
+#about-me-flex {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-between;
+  row-gap: 20px;
+  column-gap: 20px;
+}
+
+#about-me-flex > div { 
+  width: 45%;
+  min-width: 300px;
+  padding: 0px;
+  margin: 0px;
+}
+
+
+
+/* GRID STRUCTURE FOR PIC AND SOCIAL LINKS */
+
+#picture {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: 1fr 0.1fr;
+  grid-column-gap: 20px;
+  grid-row-gap: 10px;
+  justify-items: start;
+  align-items: center;
+}
+
+.headshot{
+  width: 240px;
+  border-radius: 10px;
+}
+
+.social-links {
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-row-gap: 40px;
+  width: auto;
+}
+
+.social-links img {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+}
+
+.email p {
+  display: block;
+  background-color: var(--dark-blue);
+  width: 240px;
+  color: white;
+  text-align: center;
+  font-size: 15px;
+  font-family: var(--font-family);
+  padding: 10px 0px;
+  border-radius: 10px;
+  border: none;
+}
+
+.cv {
+  background-color: var(--dark-blue);
+  width: 50px;
+  height: 50px;
+  color: white;
+  border-radius: 40px;
+  border: none;
+  text-align: center;
+  text-justify: center;
+}
+
+.cv p {
+  text-align: center;
+  font-weight: bold;
+  font-family: var(--font-family);
+  font-size: 1.5em; 
+  color: white; 
+  line-height: 50px; 
+}
+
+.cv a {
+  text-decoration: none;
+}
+
+
+/* HOVER TEXT FOR SOCIAL LINKS */
+
+.philpeople-info, .googlescholar-info, .cv-info {
+  visibility: hidden;
+  position: absolute;
+  background-color: var(--dark-blue);
+  font-family: var(--font-family);
+  max-width: 200px;
+  color: white;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px;
+  margin: 0 20px 0 20px;
+}
+
+
+@media screen and (min-width: 850px) {
+
+  /* THE HOVER TEXT ONLY APPEARS ON DESKTOP */
+
+  .philpeople-link:hover .philpeople-info {
+    visibility: visible;
+  }
+
+  .googlescholar-link:hover .googlescholar-info {
+      visibility: visible;
+      }
+
+  .cv:hover .cv-info {
+      visibility: visible;
+  }
+
+}
+
+@media screen and (max-width: 885px) {
+  .flex-container > div {
+    flex-basis: 100%;
+  }
+  #about-me-flex {
+    justify-content: space-evenly;
+  }
+  #about-me-flex > div {
+    flex-basis: 100%;
+  }
+
+}
+
+/* COLLAPSIBLE CONTENT FOR PUBLICATIONS */
+
+.subtitle {
+  color: var(--dark-blue);
+  font-family: var(--font-family);
+  font-weight: bold;
+  font-size: 20px;
+  margin: 10px 0px 10px 0px;
+  cursor: pointer;
+  padding: 8px;
+  border-radius: 5px;
+}
+
+.subsubtitle {
+  color: black;
+  font-family: var(--font-family);
+  font-size: 15px;
+  margin: 0px 0px 15px 0px;
+  font-weight: bold;
+  cursor: pointer;
+  padding: 8px;
+  border-radius: 5px;
+}
+
+#publications h3 {
+  text-transform: uppercase;
+  margin-top: 15px;
+}
+
+.collapsible-head {
+  width: 100%;
+  background-color: var(--light-gray);
+  margin-bottom: 10px;
+  padding: 5px 5px 0px 5px;
+  border-bottom:solid 1.5px;
+  border-top: solid 0.5px;
+  border-radius: 10px;
+  border-color: var(--dark-blue);
+  font-weight: bold;
+}
+
+.collapsible {
+  width: 100%;
+  background-color: var(--light-gray);
+  color: black;
+  cursor: pointer;
+  text-align: left;
+  font-size: 15px;
+  font-family: var(--font-family);
+  margin-bottom: 10px;
+  padding: 5px 0px 0px 5px;
+  border: none;
+  border-radius: 5px;
+  display: grid;
+  grid-template-columns: 90% 10%;
+  grid-column-gap: 0px;
+}
+
+.content {
+  margin-left: 10px;
+  color:black;
+  border-top: dotted 1px;
+  padding-top: 10px;
+  padding-right: 10px;
+  font-weight: normal;
+  margin-bottom: 10px;
+}
+
+.info {
+  display: block;
+  color: black;
+  background-color: var(--light-gray);
+  width: 95%;
+  padding-top: 5px;
+  font-weight: normal;
+}
+
+.publication-authors {
+  display: block;
+  color: black;
+  background-color: var(--light-gray);
+  width: 95%;
+  padding-top: 5px;
+  font-weight: normal;
+}
+
+.summary--info {
+  display: inline;
+  padding-right: 5px;
+}
+
+
+.icon { 
+  width: 100%; 
+  text-align: right;
+}
+
+.external-link-icon {
+  width: 100%;
+  margin-right: 10px;
+  min-width: 10px;
+  max-width: 50px;
+}
+
+.blog-title {
+  font-weight: bold;
+}
+
+.blog-info {
+  margin-left: 10px; 
+}
+
+/* TESTING GRIDS FOR PUBLICATIONS */ 
+
+#publications {
+  flex-basis:100%;
+}
+
+
+/* PLATO & ARISTOTLE IMAGE */
+
+.plato-aristotle {
+  background-color: white !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.plato-aristotle img {
+  width: 400px;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* COMPASS */
+
+.service dt {
+  font-weight: normal;
+  margin-bottom: 10px;
+  margin-left: 20px;
+  text-align: justify;
+}
