@@ -252,6 +252,14 @@ export default {
     service: { 
         department: [
             {
+                title: "Philosophy Department Coding Group Coordinator",
+                date: "Summer 2022 to Present"
+            },
+            {
+                title: "Teaching Assistant Orientation Leader",
+                date: "Fall 2021 to Present"
+            },
+            {
                 title: "COMPASS Coordinator",
                 date: "Fall 2020 to Present"
             },
