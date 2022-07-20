@@ -61,11 +61,11 @@ document.getElementById("publications").innerHTML = `
                 let regex=/(Nader, K.)/g
                 return `
                 <li>
-                <a href=${publication.link} target="_blank">
+                ${publication.link ? `<a href=${publication.link} target="_blank">` : ""}
                 <h6 class="publication--title col-12">'${publication.title}'</h6></a>
-                <span class="publication--info col-12">(${publication.date}). <em>${publication.info}</em>, ${publication.issue}.</span>
+                <span class="publication--info col-12">(${publication.date}). <em>${publication.info}</em>${publication.issue ? ", " + publication.issue : ""}.</span>
                 </li> 
-                    `
+                    ` 
         }).join("")}
 
         <h4 class="subtitle row">Empirical research</h4>

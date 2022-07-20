@@ -1,11 +1,12 @@
 :root {
   --dark-blue: #001728;
   --light-gray: white;
-  --font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --font-family: "Segoe UI", Helvetica, Arial, sans-serif;
 }
 
-body {
-  margin: 30px 15%;
+html {
+  margin: 30px auto;
+  max-width: 800px;
 }
 
 small {
@@ -89,7 +90,7 @@ dt {
 }
 
 #service dt {
-  font-weight: 100 !important;
+  font-weight: normal !important;
 }
 
 dd {
@@ -227,11 +228,12 @@ dd .talk-timeplace {
   background-color: var(--dark-blue);
   font-family: var(--font-family);
   max-width: 200px;
+  min-width: 150px;
   color: white;
   text-align: center;
   border-radius: 6px;
   padding: 5px;
-  margin: 0 20px 0 20px;
+  margin: 0 20px;
 }
 
 
@@ -262,6 +264,10 @@ dd .talk-timeplace {
   }
   #about-me-flex > div {
     flex-basis: 100%;
+  }
+
+  body {
+    margin: 30px 30px;
   }
 
 }
@@ -381,7 +387,7 @@ dd .talk-timeplace {
 /* TESTING GRIDS FOR PUBLICATIONS */ 
 
 #publications {
-  flex-basis:100%;
+  flex-basis: 100%;
 }
 
 

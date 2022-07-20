@@ -21,6 +21,14 @@ export default {
 
     publications: [
         {
+            title: "Video Game Fictions: A Dual-Work View ",
+            date: "forthcoming",
+            info: "Journal of the Philosophy of Games",
+            type: "philosophy",
+            link: "",
+            abstract: "Video games fictions are interactive: some of the content is set by the game designer and some is set by the player. However, philosophers disagree over how this interaction is reflected within the fictional content of video games. First, I will show that games and playthrough are two distinct works of fiction with their associated fictional content (Part I). Second, I argue that players engage with both fictional works when playing a video game. They imagine the fictional truths associated with the game and those associated with their playthrough (Section II). Thus, I defend what I will call a Dual-Work view of our engagement with video game fictions. To do so, I show that games have accessible fictional content (II.1), that games are distinctively incomplete fictions (II.2), and that players engage with this distinctive incompleteness (II.3). My goal is to offer a clear account of the fictional content of video games."
+        },
+        {
             title: "Dating through the filters",
             date: "2021",
             info: "Social Philosophy and Policy",
@@ -73,7 +81,7 @@ export default {
     awards: [
         {
             title: "Summer Institute in Technology Ethics at Santa Clara University",
-            amount: "$2,500",
+            amount: "$2,750",
             date:"July 2022"
         },
         {

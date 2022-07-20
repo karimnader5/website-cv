@@ -6,6 +6,11 @@ document.getElementById("publications").innerHTML = `
     <h3>Philosophical Publications</h3>
 
     ${cvData.publications.filter(item => item.type == "philosophy").map(function(publication) {
+        let link = `
+                <div class="icon">
+                    <a id="publication-link" href=${publication.link} target="_blank">
+                    <img class="external-link-icon" src="pictures/link2.png" alt="external-link"></a>
+                </div> `
         return `
         <details class="collapsible-head">
         <summary class="collapsible">
@@ -13,14 +18,12 @@ document.getElementById("publications").innerHTML = `
                 ${publication.title}
                 <span class="info"><em>${publication.info}</em>, ${publication.date}</span>
             </div>
-            <div class="icon">
-                <a href=${publication.link} target="_blank">
-                <img class="external-link-icon" src="pictures/link2.png" alt="external-link"></a>
-            </div>
+            ${publication.link ? link : ""}
         </summary>
         <div class="content">
         <p>${publication.abstract}</p>        
-        </div></details> `
+        </div></details>
+        `
     }).join("")}
 
     <h3>Empirical Work</h3>
