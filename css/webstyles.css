@@ -223,7 +223,7 @@ dd .talk-timeplace {
 /* HOVER TEXT FOR SOCIAL LINKS */
 
 .philpeople-info, .googlescholar-info, .cv-info {
-  visibility: hidden;
+  display: none;
   position: absolute;
   background-color: var(--dark-blue);
   font-family: var(--font-family);
@@ -242,15 +242,15 @@ dd .talk-timeplace {
   /* THE HOVER TEXT ONLY APPEARS ON DESKTOP */
 
   .philpeople-link:hover .philpeople-info {
-    visibility: visible;
+    display: inline-block;
   }
 
   .googlescholar-link:hover .googlescholar-info {
-      visibility: visible;
+    display: inline-block;
       }
 
   .cv:hover .cv-info {
-      visibility: visible;
+    display: inline-block;
   }
 
 }
