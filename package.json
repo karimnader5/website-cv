@@ -1,0 +1,22 @@
+{
+  "name": "website-cv",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/karimnader5/website-cv.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/karimnader5/website-cv/issues"
+  },
+  "homepage": "https://github.com/karimnader5/website-cv#readme",
+  "dependencies": {
+    "bootstrap": "^5.2.0"
+  }
+}

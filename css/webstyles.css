@@ -5,9 +5,26 @@
 }
 
 html {
-  margin: 30px auto;
+  margin: auto;
   max-width: 800px;
 }
+
+header {
+  height: 50px; 
+  width: 100%; 
+  display: flex;
+  flex-direction: row;
+  padding: 10px 20px;
+  align-items: baseline;
+  justify-content: space-between;
+  background-color: #001728;
+  color: white;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  margin-bottom: 30px;
+}
+
+
 
 small {
   font-weight: 100;
@@ -17,6 +34,7 @@ h1{
   font-family: var(--font-family);
   font-size: 25px;
   margin: 40 0 40 40;
+  text-transform: uppercase
 }
 
 h2 {
@@ -38,17 +56,21 @@ h2 > p {
   font-weight: 100;
 }
 
-h3 {
+h3:not(header h3) {
   font-family: var(--font-family);
   font-size: 15px;
   margin: 10px 0 10px 0;
-}
+} 
 
 p {
   font-family: var(--font-family);
   text-align: justify;
   font-size: 15px;
   margin: 0px 0px 10px 0px;
+}
+
+button {
+  font-size: 15px;
 }
 
 a { 
@@ -60,7 +82,7 @@ details, summary {
   font-family: var(--font-family);
 }
 
-p a:hover {
+p a:hover, button a:hover {
   background-color: var(--dark-blue);
   color: white;
 }
@@ -171,8 +193,8 @@ dd .talk-timeplace {
 
 .social-links {
   display: grid;
-  grid-template-rows: 1fr 1fr 1fr;
-  grid-row-gap: 40px;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-row-gap: 15px;
   width: auto;
 }
 
@@ -222,7 +244,7 @@ dd .talk-timeplace {
 
 /* HOVER TEXT FOR SOCIAL LINKS */
 
-.philpeople-info, .googlescholar-info, .cv-info {
+.philpeople-info, .googlescholar-info, .cv-info, .github-info {
   display: none;
   position: absolute;
   background-color: var(--dark-blue);
@@ -241,9 +263,13 @@ dd .talk-timeplace {
 
   /* THE HOVER TEXT ONLY APPEARS ON DESKTOP */
 
-  .philpeople-link:hover .philpeople-info {
+  .philpeople-link:hover .philpeople-info  {
     display: inline-block;
   }
+
+  .github-link:hover .github-info {
+    display: inline-block;
+  } 
 
   .googlescholar-link:hover .googlescholar-info {
     display: inline-block;
@@ -256,8 +282,10 @@ dd .talk-timeplace {
 }
 
 @media screen and (max-width: 885px) {
+
   .flex-container > div {
     flex-basis: 100%;
+    margin: 0px 20px;
   }
   #about-me-flex {
     justify-content: space-evenly;
@@ -265,11 +293,7 @@ dd .talk-timeplace {
   #about-me-flex > div {
     flex-basis: 100%;
   }
-
-  body {
-    margin: 30px 30px;
-  }
-
+  
 }
 
 /* COLLAPSIBLE CONTENT FOR PUBLICATIONS */
@@ -306,9 +330,9 @@ dd .talk-timeplace {
   background-color: var(--light-gray);
   margin-bottom: 10px;
   padding: 5px 5px 0px 5px;
-  border-bottom:solid 1.5px;
-  border-top: solid 0.5px;
-  border-radius: 10px;
+  border-bottom:solid 0.5px;
+  border-left: solid 0.5px;
+  border-bottom-left-radius: 10px;
   border-color: var(--dark-blue);
   font-weight: bold;
 }
@@ -373,7 +397,7 @@ dd .talk-timeplace {
   width: 100%;
   margin-right: 10px;
   min-width: 10px;
-  max-width: 50px;
+  max-width: 40px;
 }
 
 .blog-title {
@@ -401,7 +425,7 @@ dd .talk-timeplace {
 }
 
 .plato-aristotle img {
-  width: 400px;
+  width: 100%;
   height: auto;
   margin-left: auto;
   margin-right: auto;

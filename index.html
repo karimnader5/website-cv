@@ -6,18 +6,17 @@
 
 <head>
 <title>Karim Nader</title>
+<link rel="stylesheet" href="node_modules\bootstrap\dist\css\bootstrap.css"/>
 <link rel="stylesheet" href="./css/webstyles.css"/>
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500&display=swap" rel="stylesheet">
 <script type="module" src="./mjs/websiteGenerator.mjs"></script>
-
 </head>
 
 <body>
 
-  <h1>Karim Nader</h1>
+  <header>
+    <h3>Karim Nader</h3>
+    <h5>Home</h5>
+  </header>
 
   <div class="flex-container">
 
@@ -31,6 +30,7 @@
       <p>I am a fourth-year Ph.D. student at the University of Texas at Austin. My research focuses on the ways in which technology reflects and affects human values, so I am usually thinking about ethics, aesthetics, and epistemology. My dissertation is on the ethics of virtual actions. I am also interested in others issues at the intersection of ethics and aesthetics, the ethics of information and technology, algorithmic bias, and algorithmic decision making.</p>
       <p>Before coming to the University of Texas, I received a B.A. from Columbia University in philosophy and mathematics and briefly worked in the legal field. I grew up in Beirut, Lebanon.</p>
       <p>Outside of philosophy, I practice judo, meditate regularly, and play video games.</p>
+      <button class="btn button"><a href="https://projects.karimnaderphilosophy.com/" target="_blank">Web Development Portfolio</a></button>
       </div>
 
       <div id="picture">
@@ -47,8 +47,14 @@
     
             <div class="googlescholar-link">
               <a href="https://scholar.google.com/citations?hl=en&user=GKpm88YAAAAJ" target="_blank">
-              <img src="pictures/googlescholar.png" alt="googlescholar-logo"></a>
+              <img src="pictures/googlescholar.png" alt="google-scholar-logo"></a>
               <span class="googlescholar-info">Click to see my <br/> Google Scholar profile</span>
+            </div>
+
+            <div class="github-link">
+              <a href="https://github.com/karimnader5" target="_blank">
+              <img src="pictures/github.png" alt="github-logo"></a>
+              <span class="github-info">Click to see my <br/> GitHub profile</span>
             </div>
     
             <div class="cv">
@@ -139,8 +145,8 @@
   </div>
 
   <div class="plato-aristotle">
-  <img display="block" src="pictures/plato-aristotle.png" alt="plato and aristotles">
-  </div>
+    <img display="block" src="pictures/plato-aristotle.png" alt="plato and aristotles">
+    </div>
 
 </div>
 </body>
