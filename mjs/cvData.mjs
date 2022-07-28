@@ -312,6 +312,6 @@ export default {
 
     skills: [
         "Arabic (Levant dialect, native), French (fluent), Japanese (competent)",
-        "HTML, CSS, JavaScript, React, Redux"
+        "HTML, CSS, JavaScript, React"
     ]
 }
