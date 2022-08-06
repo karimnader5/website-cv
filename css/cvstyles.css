@@ -2,7 +2,6 @@
   .print { 
   display: none; 
 }
-
 }
 
 @media print {
@@ -10,9 +9,27 @@
   a[href]:after {content: none !important;}
 }
 
-@page {
-  margin: 1in;
+@media print {
+  html {
+    max-width: none !important;
+    margin: 0px !important;
+  }
+  body {
+    width: 100% !important;
+    max-width: none !important;
+    margin: 0px !important;
+  }
+  section {
+    width: auto !important;
+    margin: 0px  !important;
+  }
 }
+
+@page {
+  margin: 1in !important;
+}
+
+
 
 html {
   max-width: 800px;
@@ -51,7 +68,6 @@ h4 {
 .col-12, .col-7, .col-5, .col-3, .col-2 {
   padding: 0px;
 }
-
 
 .title {
   margin-top: 20px; 
