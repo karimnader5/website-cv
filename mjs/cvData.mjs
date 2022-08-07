@@ -21,7 +21,7 @@ export default {
 
     publications: [
         {
-            title: "Video Game Fictions: A Dual-Work View ",
+            title: "Video game fictions: A dual-work view ",
             date: "forthcoming",
             info: "Journal of the Philosophy of Games",
             type: "philosophy",
