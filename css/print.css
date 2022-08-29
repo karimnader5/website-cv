@@ -5,16 +5,26 @@
 a:link {
     text-decoration: none !important;
 }
+
 a[href]:after {
     content: none !important;
 }
 
 html {
-    max-width: none !important;
     margin: 0px !important;
 }
+
+
+h1 {
+    padding: 0px !important;
+}
+
 body {
-    width: 100% !important;
+    font-family: 'EB Garamond', serif;
+}
+
+body {
+    width: 6.5in !important;
     max-width: none !important;
     margin: 0px !important;
 }
@@ -74,6 +84,7 @@ h6 {
 .presentation--info {
     display: inline-block;
 }
+
 
 section h6 {
     margin-bottom: 0px;

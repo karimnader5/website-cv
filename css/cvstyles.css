@@ -3,6 +3,7 @@ html {
     margin: 20px auto;
 }
 
+
 .print {
     margin: 20px 0px;
 }
@@ -21,6 +22,10 @@ body {
 
 h2 {
     margin: 0px;
+}
+
+h1 {
+    padding: 0px !important;
 }
 
 h3 {

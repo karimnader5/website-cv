@@ -132,7 +132,7 @@ document.getElementById('awards').innerHTML = `
 
 document.getElementById('raships').innerHTML = `
 
-    <h3 class="title row">Research Assistanships</h3>
+    <h3 class="title row">Research Assistantships</h3>
     ${cvData.raship
         .map(function (raship) {
             return `
@@ -173,7 +173,7 @@ document.getElementById('presentations').innerHTML = `
 document.getElementById('teaching').innerHTML = `
 
     <h3 class="title row">Teaching Experience</h3>
-    <h4 class="subtitle row">Assistant Instructor</h4>
+    <h4 class="subtitle row">Instructor of Record</h4>
         ${cvData.teaching.ai
             .map(function (teaching) {
                 return `
@@ -234,15 +234,14 @@ document.getElementById('service').innerHTML = `
     <span>Reviewer for ${cvData.service.profession.reviews
         .map(function (service) {
             return `
-        <em>${service.title}</em> (${service.number})
+        <em>${service.title}</em> (${service.number}).
         `;
         })
-        .join('')}
+        .join('')}</span>
     </div>
-
     `;
 
-document.getElementById('coursework').innerHTML = `
+/* document.getElementById('coursework').innerHTML = `
     
     <h3 class="title row">Coursework in Information Studies</h3>
     ${cvData.coursework
@@ -255,7 +254,7 @@ document.getElementById('coursework').innerHTML = `
     `;
         })
         .join('')}
-    `;
+    `; */
 
 document.getElementById('skills').innerHTML = `
 
