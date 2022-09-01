@@ -204,7 +204,7 @@ document.getElementById('teaching').innerHTML = `
             <div class="teaching row">
             <span class="col-7">${teaching.title}</span>
             <span class="col-5">${teaching.semester}</span>
-            <span class="col-12 font-italic">${teaching.info}</span>
+            <span class="col-12">${teaching.info}</span>
             </div> 
         `;
         })
@@ -215,7 +215,7 @@ document.getElementById('teaching').innerHTML = `
 document.getElementById('service').innerHTML = `
 
     <h3 class="title row">Service</h3>
-    <h4 class="subtitle row">To the department</h4>
+    <h4 class="subtitle row">To the department (UT Austin)</h4>
 
     ${cvData.service.department
         .map(function (service) {

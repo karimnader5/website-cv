@@ -6,7 +6,7 @@ export default {
 
     education: [
         {
-            institution: 'The University of Texas au Austin',
+            institution: 'The University of Texas at Austin',
             info: 'Ph.D. in Philosophy',
             date: 'May 2023 (Expected)',
         },
@@ -252,9 +252,9 @@ export default {
         ],
         other: [
             {
-                title: 'The role of philosophy in information studies',
+                title: '\'The role of philosophy in information studies\'',
                 semester: 'Spring 2021',
-                info: 'Guest lecture for Kenneth Fleischman, “Disciplinary Foundations for Information Studies”',
+                info: '(Guest lecture for Kenneth Fleischman, “Disciplinary Foundations for Information Studies”)',
             },
         ],
     },
