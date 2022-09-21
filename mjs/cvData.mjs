@@ -8,6 +8,9 @@ export default {
         {
             institution: 'The University of Texas at Austin',
             info: 'Ph.D. in Philosophy',
+            details:
+                'Dissertation: <i>Virtual wrongs as fictional wrongs: Ethics in virtual worlds</i> <br /> Committee: Kathleen Higgins (chair), Robbie Kubala, Julia Driver, and Christopher Bartel (Appalachian State University)',
+            details2: '',
             date: 'May 2023 (Expected)',
         },
         {
@@ -20,7 +23,7 @@ export default {
 
     publications: [
         {
-            title: 'Video game fictions: A dual-work view ',
+            title: 'Video game fictions: A dual-work view',
             date: 'forthcoming',
             info: 'Journal of the Philosophy of Games',
             type: 'philosophy',
@@ -252,7 +255,7 @@ export default {
         ],
         other: [
             {
-                title: '\'The role of philosophy in information studies\'',
+                title: "'The role of philosophy in information studies'",
                 semester: 'Spring 2021',
                 info: '(Guest lecture for Kenneth Fleischman, “Disciplinary Foundations for Information Studies”)',
             },
@@ -263,35 +266,52 @@ export default {
         department: [
             {
                 title: 'Philosophy Department Coding Group Coordinator',
+                description:
+                    'Assign lessons and projects, review and debug code.',
                 date: 'Summer 2022 to Present',
             },
             {
                 title: 'Teaching Assistant Orientation Leader',
+                description:
+                    'Lead mandatory training for new teaching assistants in the philosophy department.',
                 date: 'Fall 2021 to Present',
             },
             {
                 title: 'COMPASS Coordinator',
+                description:
+                    'Select readings, solicit and review applications, and oversee weekend activities for COMPASS: a workshop for undergraduate students from historically underrepresented communities in the field to discuss works of feminist philosophy.',
                 date: 'Fall 2020 to Present',
             },
             {
                 title: 'Philosophy & Meditation Group Coordinator',
+                description: 'Lead a weekly one-hour meditation sitting.',
                 date: 'Fall 2019 to Present',
             },
             {
                 title: 'Philosophy Department Social Chair',
+                description:
+                    'Organize social activities for the department: a semesterly picnic and frequent happy hours.',
                 date: 'Fall 2019 to Present',
             },
             {
                 title: 'Graduate Student Representative',
+                description:
+                    'Served as a liaison between the graduate students and the chair of the department.',
                 date: 'Fall 2019 to Spring 2020',
             },
             {
                 title: 'Graduate Conference Organizing Committee',
+                description:
+                    'Solicited and reviewed submissions from graduate students to select the conference speakers.',
                 date: 'Fall 2019 to Spring 2020',
             },
         ],
         profession: {
             reviews: [
+                {
+                    title: 'iConference 2023',
+                    number: 2,
+                },
                 {
                     title: 'Ethics and Information Technology',
                     number: 1,
@@ -314,5 +334,32 @@ export default {
     skills: [
         'Arabic (Levant dialect, native), French (fluent), Japanese (competent)',
         'HTML, CSS, JavaScript, React',
+    ],
+
+    references: [
+        {
+            name: 'Kathleen Higgins',
+            department: 'Department of Philosophy',
+            uni: 'The University of Texas at Austin',
+            email: 'kmhiggins@austin.utexas.edu',
+        },
+        {
+            name: 'Robbie Kubala',
+            department: 'Department of Philosophy',
+            uni: 'The University of Texas at Austin',
+            email: 'rkubala@utexas.edu',
+        },
+        {
+            name: 'Samuel Baker',
+            department: 'Department of English',
+            uni: 'The University of Texas at Austin',
+            email: 'sebaker@austin.utexas.edu',
+        },
+        {
+            name: 'Josh Dever (teaching)',
+            department: 'Department of Philosophy',
+            uni: 'The University of Texas at Austin',
+            email: 'dever@austin.utexas.edu',
+        },
     ],
 };

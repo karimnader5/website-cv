@@ -39,6 +39,7 @@ h4 {
 
 .col-12,
 .col-7,
+.col-6,
 .col-5,
 .col-3,
 .col-2 {
@@ -86,4 +87,17 @@ section a {
 
 section a:hover {
     text-decoration: none;
+}
+
+.service--description {
+    padding-left: 20px;
+}
+
+
+.presentation--date {
+    margin-left: -20px;
+}
+
+.presentation--info {
+    padding-right: 15px;
 }

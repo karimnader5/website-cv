@@ -146,3 +146,19 @@ h4::after {
     height: 200px;
     margin-bottom: -200px;
 }
+
+.service--description {
+    padding-left: 20px;
+}
+
+.presentation--date {
+    margin-left: -15px;
+}
+
+.presentation--info {
+    padding-right: 15px;
+}
+
+.page {
+    page-break-before: always;
+}

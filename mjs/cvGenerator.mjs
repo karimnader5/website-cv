@@ -17,7 +17,7 @@ document.getElementById('header').innerHTML = `
         karim.nader@utexas.edu
     </a>
     <br />
-    <a href = "index.html">
+    <a href = "https://karimnaderphilosophy.com">
         karimnaderphilosophy.com
     </a>
     </span>
@@ -121,8 +121,8 @@ document.getElementById('awards').innerHTML = `
             return `
         <div class="award row">
             <span class="award--title col-7">${award.title}</span>
-            <span class="award--amount col-2">${award.amount}</span>
-            <span class="award--date col-3">${award.date}</span>
+            <span class="award--amount col-3">${award.amount}</span>
+            <span class="award--date col-2">${award.date}</span>
         </div>
         `;
         })
@@ -155,12 +155,18 @@ document.getElementById('presentations').innerHTML = `
             return `
                 <li>
                 <div class="row">
-                    <h6 class="col-12">${
+                    <h6 class="col-12 presentation--title">${
                         presentation.title
                     } ${presentation.peerReviewed ? "<span class='small'>* Peer Reviewed</span>" : ''}</h6>
-                    <span class="col-7">${presentation.info}</span>
-                    <span class="col-3">${presentation.date}</span>
-                    <span class="col-2">${presentation.location}</span>
+                    <span class="col-7 presentation--info">${
+                        presentation.info
+                    }</span>
+                    <span class="col-3 presentation--date">${
+                        presentation.date
+                    }</span>
+                    <span class="col-2 presentation--location">${
+                        presentation.location
+                    }</span>
                 </div>
                 </li>
         `;
@@ -197,7 +203,7 @@ document.getElementById('teaching').innerHTML = `
         })
         .join('')}
 
-    <h4 class="subtitle row">Other Teaching Experience</h4>
+        <h4 class="subtitle row page">Other Teaching Experience</h4>
     ${cvData.teaching.other
         .map(function (teaching) {
             return `
@@ -215,14 +221,15 @@ document.getElementById('teaching').innerHTML = `
 document.getElementById('service').innerHTML = `
 
     <h3 class="title row">Service</h3>
-    <h4 class="subtitle row">To the department (UT Austin)</h4>
+    <h4 class="subtitle row">At UT Austin</h4>
 
     ${cvData.service.department
         .map(function (service) {
             return `
         <div class="service row">
-        <span class="service--title col-7">${service.title}</span>
+        <h6 class="service--title col-7">${service.title}</h6>
         <span class="service--date col-5">${service.date}</span>
+        <span class="service--description font-italic col-12">${service.description}</span>
         </div>
         `;
         })
@@ -234,10 +241,9 @@ document.getElementById('service').innerHTML = `
     <span>Reviewer for ${cvData.service.profession.reviews
         .map(function (service) {
             return `
-        <em>${service.title}</em> (${service.number}).
-        `;
+        <em>${service.title}</em> (${service.number})`;
         })
-        .join('')}</span>
+        .join(', ')}.</span>
     </div>
     `;
 
@@ -263,6 +269,24 @@ document.getElementById('skills').innerHTML = `
         .map(function (skill) {
             return `
         <span class="skill row">${skill}</span>
+        `;
+        })
+        .join('')}
+
+`;
+
+document.getElementById('references').innerHTML = `
+
+    <h3 class="title col-12">References</h3>
+    ${cvData.references
+        .map(function (reference) {
+            return `
+        <div class="reference box col-6 row">
+        <h6>${reference.name}</h6>
+        <span class="col-12">${reference.department}</span>
+        <span class="col-12">${reference.uni}</span>
+        <span class="col-12">${reference.email}</span>
+        </div>
         `;
         })
         .join('')}
