@@ -93,7 +93,11 @@ document.getElementById('publications').innerHTML = `
                 let regex = /(Nader, K.)/g;
                 return `
             <li>
-            <a href=${publication.link} target="_blank">
+            ${
+                publication.link
+                    ? `<a href=${publication.link} target="_blank">`
+                    : ''
+            }
             <h6 class="publication--title col-12">'${
                 publication.title
             }'</h6></a> 
@@ -206,7 +210,7 @@ document.getElementById('teaching').innerHTML = `
         })
         .join('')}
 
-        <h4 class="subtitle row page">Other Teaching Experience</h4>
+        <h4 class="subtitle row">Other Teaching Experience</h4>
     ${cvData.teaching.other
         .map(function (teaching) {
             return `
