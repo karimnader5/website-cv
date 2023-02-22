@@ -156,6 +156,9 @@ document.getElementById('presentations').innerHTML = `
                 <li>
                 <div class="row">
                     <h6 class="col-12 presentation--title">${
+                        presentation.peerReviewed ? '<span>∗</span>' : ''
+                    } 
+                    ${
                         presentation.title
                     } ${presentation.peerReviewed ? "<span class='small'>* Peer Reviewed</span>" : ''}</h6>
                     <span class="col-7 presentation--info">${

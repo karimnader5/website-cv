@@ -23,11 +23,33 @@ export default {
 
     publications: [
         {
-            title: 'Video game fictions: A dual-work view',
+            title: 'Human-AI Teaming During an Ongoing Disaster: How Scripts Around Training and Feedback Reveal this is a Form of Human-Machine Communication',
             date: 'forthcoming',
+            info: 'Human-Machine Communication',
+            type: 'empirical',
+            abstract:
+                'Humans play an integral role in identifying important information from social media during disasters. While human annotation of social media data to train machine learning models is often viewed as human-computer interaction, this study interrogates the ontological boundary between such interaction and human-machine communication. We conducted multiple interviews with participants who both labeled data to train machine learning models and corrected machine- inferred data labels. Findings reveal three themes: scripts invoked to manage decision-making, contextual scripts, and scripts around perceptions of machines. Humans use scripts around training the machine—a form of behavioral anthropomorphism—to develop social relationships with them. Correcting machine-inferred data labels changes these scripts and evokes self-doubt around who is right, which substantiates the argument that this is a form of human-machine communication.',
+            authors:
+                'Stephens, K., Harris, A., Hughes, A., Montagnolo, C., Nader, K., Stevens, S., Tasuji, T., Xu, Y., Purohit, H., Zobel, C.',
+        },
+        {
+            title: 'Human-AI Teaming for COVID-19 Response: A Practice & Research Collaboration Case Study',
+            date: '2022',
+            info: 'Proceedings of the 19th International ISCRAM Conference',
+            type: 'empirical',
+            link: 'https://idl.iscram.org/files/amandahughes/2022/2470_AmandaHughes_etal2022.pdf',
+            abstract:
+                'Practice and research collaborations in the disaster domain have the potential to improve emergency management practices while also advancing disaster science theory. However, they also pose challenges as practitioners and researchers each have their own culture, history, values, incentives, and processes that do not always facilitate collaboration. In this paper, we reflect on a 6-month practice and research collaboration, where researchers and practitioners worked together to craft a social media monitoring system for emergency managers in response to the COVID-19 pandemic. The challenges we encountered in this project fall into two broad categories, job-related and timescale challenges. Using prior research on team science as a guide, we discuss several challenges we encountered in these two categories and show how our team sought to overcome them. We conclude with a set of best practices for improving practice and research collaborations.',
+            conference: true,
+            authors:
+                'Hughes, A., Stephens, K., Peterson, S., Purohit, H., Harris H., Senarath, Y., Jarvis S. A., Montagnolo, C., Nader, K.',
+        },
+        {
+            title: 'Video game fictions: A dual-work view',
+            date: '2022',
             info: 'Journal of the Philosophy of Games',
             type: 'philosophy',
-            link: '',
+            link: 'https://journals.uio.no/JPG/article/view/9230',
             abstract:
                 'Video games fictions are interactive: some of the content is set by the game designer and some is set by the player. However, philosophers disagree over how this interaction is reflected within the fictional content of video games. First, I will show that games and playthrough are two distinct works of fiction with their associated fictional content (Part I). Second, I argue that players engage with both fictional works when playing a video game. They imagine the fictional truths associated with the game and those associated with their playthrough (Section II). Thus, I defend what I will call a Dual-Work view of our engagement with video game fictions. To do so, I show that games have accessible fictional content (II.1), that games are distinctively incomplete fictions (II.2), and that players engage with this distinctive incompleteness (II.3). My goal is to offer a clear account of the fictional content of video games.',
         },
@@ -88,6 +110,11 @@ export default {
 
     awards: [
         {
+            title: 'Graduate School Continuing Fellowship (full year)',
+            amount: '$53,000',
+            date: 'February 2023',
+        },
+        {
             title: 'Summer Institute in Technology Ethics at Santa Clara University',
             amount: '$2,750',
             date: 'July 2022',
@@ -103,7 +130,12 @@ export default {
             date: 'May 2022',
         },
         {
-            title: 'Graduate School Continuing Fellowship',
+            title: '',
+            amount: '$500',
+            date: 'May 2021',
+        },
+        {
+            title: 'Graduate School Continuing Fellowship (one semester)',
             amount: '$10,000',
             date: 'April 2022',
         },
@@ -111,11 +143,6 @@ export default {
             title: 'Summer Dissertation Writing Fellowship',
             amount: '$6,000',
             date: 'April 2022',
-        },
-        {
-            title: 'Cogburn Graduate Essay Prize',
-            amount: '$500',
-            date: 'May 2021',
         },
         {
             title: 'Graduate Student Assembly Travel Award',
@@ -257,7 +284,7 @@ export default {
             {
                 title: "'The role of philosophy in information studies'",
                 semester: 'Spring 2021',
-                info: '(Guest lecture for Kenneth Fleischman, “Disciplinary Foundations for Information Studies”)',
+                info: '(Guest lecture for Kenneth Fleischmann, “Disciplinary Foundations for Information Studies”)',
             },
         ],
     },
@@ -332,8 +359,8 @@ export default {
     ], */
 
     skills: [
-        'Arabic (Levant dialect, native), French (fluent), Japanese (competent)',
-        'HTML, CSS, JavaScript, React',
+        'Arabic (Levant dialect, native), French (fluent), and Japanese (competent).',
+        'HTML, CSS, JavaScript, and React.',
     ],
 
     references: [
