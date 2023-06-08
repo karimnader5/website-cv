@@ -14,7 +14,6 @@ html {
     margin: 0px !important;
 }
 
-
 h1 {
     padding: 0px !important;
 }
@@ -24,16 +23,11 @@ body {
 }
 
 body {
-    width: 6.5in !important;
-    max-width: none !important;
     margin: 0px !important;
 }
-section {
-    width: auto !important;
-    margin: 0px !important;
-}
+
 span {
-    font-size: 16pt !important;
+    font-size: 14pt !important;
 }
 
 .row {
@@ -43,20 +37,20 @@ span {
 
 h2 {
     margin: 0px;
-    font-size: 22pt;
+    font-size: 20pt;
 }
 
 h3 {
-    font-size: 20pt;
+    font-size: 18pt;
 }
 
 h4 {
     margin: 0px;
-    font-size: 18pt;
+    font-size: 16pt;
 }
 
 h6 {
-    font-size: 16pt;
+    font-size: 14pt;
 }
 
 .col-12,
@@ -85,7 +79,6 @@ h6 {
     display: inline-block;
 }
 
-
 section h6 {
     margin-bottom: 0px;
 }
@@ -97,10 +90,11 @@ ol {
 li {
     margin-left: 25px;
     padding-left: 10px !important;
+    page-break-inside: avoid !important;
 }
 
 li {
-    font-size: 16pt;
+    font-size: 14pt;
 }
 
 section a {
@@ -112,7 +106,22 @@ section a:hover {
 }
 
 @page {
-    margin: 1in;
+    margin: 0in;
+    margin-top: 1in;
+    margin-bottom: 1in;
+    size: 8.5in 11in;
+}
+
+#printcss {
+    margin-left: 1in;
+    margin-right: 1in;
+    overflow: visible !important;
+    position: relative;
+    left: -0.1in;
+}
+
+section {
+    width: 100% !important;
 }
 
 .row {
@@ -134,7 +143,6 @@ h3::after {
 }
 
 h4 {
-    page-break-inside: avoid !important;
     margin-top: 1em;
     margin-bottom: 0.9em;
     padding-bottom: 0.1em;
@@ -161,4 +169,8 @@ h4::after {
 
 .page {
     page-break-before: always;
+}
+
+.presentation-list {
+    padding-top: 10px;
 }

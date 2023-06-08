@@ -4,6 +4,14 @@ export default {
         aoc: 'Epistemology, Normative Ethics',
     },
 
+    employment: [
+        {
+            institution: 'Massachusetts Institute of Technology',
+            info: 'Postdoctoral Associate',
+            date: 'August 2023 — ',
+        },
+    ],
+
     education: [
         {
             institution: 'The University of Texas at Austin',
@@ -11,7 +19,7 @@ export default {
             details:
                 'Dissertation: <i>Virtual wrongs as fictional wrongs: Ethics in virtual worlds</i> <br /> Committee: Kathleen Higgins (chair), Robbie Kubala, Julia Driver, and Christopher Bartel (Appalachian State University)',
             details2: '',
-            date: 'May 2023 (Expected)',
+            date: 'Expected July 2023',
         },
         {
             institution: 'Columbia University',
@@ -23,18 +31,19 @@ export default {
 
     publications: [
         {
-            title: 'Human-AI Teaming During an Ongoing Disaster: How Scripts Around Training and Feedback Reveal this is a Form of Human-Machine Communication',
-            date: 'forthcoming',
+            title: 'Human-AI teaming during an ongoing disaster: How scripts around training and feedback reveal this is a form of human-machine communication',
+            date: '2023',
             info: 'Human-Machine Communication',
+            issue: '6 (1)',
             type: 'empirical',
-            link: false,
+            link: 'https://doi.org/10.30658/hmc.6.5',
             abstract:
                 'Humans play an integral role in identifying important information from social media during disasters. While human annotation of social media data to train machine learning models is often viewed as human-computer interaction, this study interrogates the ontological boundary between such interaction and human-machine communication. We conducted multiple interviews with participants who both labeled data to train machine learning models and corrected machine-inferred data labels. Findings reveal three themes: scripts invoked to manage decision-making, contextual scripts, and scripts around perceptions of machines. Humans use scripts around training the machine—a form of behavioral anthropomorphism—to develop social relationships with them. Correcting machine-inferred data labels changes these scripts and evokes self-doubt around who is right, which substantiates the argument that this is a form of human-machine communication.',
             authors:
                 'Stephens, K., Harris, A., Hughes, A., Montagnolo, C., Nader, K., Stevens, S., Tasuji, T., Xu, Y., Purohit, H., Zobel, C.',
         },
         {
-            title: 'Human-AI Teaming for COVID-19 Response: A Practice & Research Collaboration Case Study',
+            title: 'Human-AI teaming for COVID-19 response: A practice & research collaboration case study',
             date: '2022',
             info: 'Proceedings of the 19th International ISCRAM Conference',
             type: 'empirical',
@@ -50,6 +59,7 @@ export default {
             date: '2022',
             info: 'Journal of the Philosophy of Games',
             type: 'philosophy',
+            issue: '4 (1)',
             link: 'https://journals.uio.no/JPG/article/view/9230',
             abstract:
                 'Video games fictions are interactive: some of the content is set by the game designer and some is set by the player. However, philosophers disagree over how this interaction is reflected within the fictional content of video games. First, I will show that games and playthrough are two distinct works of fiction with their associated fictional content (Part I). Second, I argue that players engage with both fictional works when playing a video game. They imagine the fictional truths associated with the game and those associated with their playthrough (Section II). Thus, I defend what I will call a Dual-Work view of our engagement with video game fictions. To do so, I show that games have accessible fictional content (II.1), that games are distinctively incomplete fictions (II.2), and that players engage with this distinctive incompleteness (II.3). My goal is to offer a clear account of the fictional content of video games.',
@@ -111,7 +121,12 @@ export default {
 
     awards: [
         {
-            title: 'Graduate School Continuing Fellowship (full year)',
+            title: 'American Society for Aesthetics Dissertation Fellowship (declined)',
+            amount: '$30,000',
+            date: 'February 2023',
+        },
+        {
+            title: 'Graduate School Continuing Fellowship (one year)',
             amount: '$53,000',
             date: 'February 2023',
         },
@@ -185,11 +200,36 @@ export default {
 
     presentations: [
         {
+            title: 'Virtual fictional actions',
+            info: 'American Society for Aesthetics Annual Meeting',
+            date: 'November 2023',
+            location: 'Arlington, VA',
+            peerReviewed: true,
+            invited: false,
+        },
+        {
+            title: 'Dating apps and the gamification of dating',
+            info: 'Discrimination in Dating; Centre for the Experimental-Philosophical Study of Discrimination',
+            date: 'September 2023',
+            location: 'Aarhus, Denmark',
+            peerReviewed: false,
+            invited: true,
+        },
+        {
+            title: 'Virtual fictional actions: What policies on video game violence get right',
+            info: 'Augmented Reality: Ethics, Perception, Metaphysic; the University of Glasgow',
+            date: 'June 2023',
+            location: 'Virtual',
+            peerReviewed: false,
+            invited: true,
+        },
+        {
             title: 'Bad AI and beyond: Understanding representations of AI in entertainment media',
             info: 'Good Systems Annual Symposium',
             date: 'April 2022',
             location: 'Austin, TX',
             peerReviewed: false,
+            invited: false,
         },
         {
             title: 'Folk theories and user strategies on dating apps',
@@ -197,6 +237,7 @@ export default {
             date: 'February 2022',
             location: 'Virtual',
             peerReviewed: true,
+            invited: false,
         },
         {
             title: 'The ethics of fantasy',
@@ -204,6 +245,7 @@ export default {
             date: 'July 2021',
             location: 'Austin, TX',
             peerReviewed: false,
+            invited: false,
         },
         {
             title: 'The agency of video game players',
@@ -211,6 +253,7 @@ export default {
             date: 'February 2021',
             location: 'Virtual',
             peerReviewed: true,
+            invited: false,
         },
         {
             title: 'Testimonial dogmatism',
@@ -218,6 +261,7 @@ export default {
             date: 'February 2021',
             location: 'Austin, TX',
             peerReviewed: false,
+            invited: false,
         },
         {
             title: 'Do we have a right to be swiped?',
@@ -225,6 +269,7 @@ export default {
             date: 'February 2020',
             location: 'Tucson, AZ',
             peerReviewed: true,
+            invited: false,
         },
     ],
 
@@ -293,33 +338,34 @@ export default {
     service: {
         department: [
             {
+                title: 'COMPASS Coordinator',
+                description:
+                    'Select readings, solicit and review applications, and oversee weekend activities for COMPASS: a workshop for undergraduate students from historically underrepresented communities to discuss works of feminist philosophy.',
+                date: 'Fall 2020 to Spring 2023',
+            },
+            {
                 title: 'Philosophy Department Coding Group Coordinator',
                 description:
                     'Assign lessons and projects, review and debug code.',
-                date: 'Summer 2022 to Present',
+                date: 'Summer 2022 to Spring 2023',
             },
             {
                 title: 'Teaching Assistant Orientation Leader',
                 description:
                     'Lead mandatory training for new teaching assistants in the philosophy department.',
-                date: 'Fall 2021 to Present',
+                date: 'Fall 2021 to Spring 2023',
             },
-            {
-                title: 'COMPASS Coordinator',
-                description:
-                    'Select readings, solicit and review applications, and oversee weekend activities for COMPASS: a workshop for undergraduate students from historically underrepresented communities in the field to discuss works of feminist philosophy.',
-                date: 'Fall 2020 to Present',
-            },
+
             {
                 title: 'Philosophy & Meditation Group Coordinator',
                 description: 'Lead a weekly one-hour meditation sitting.',
-                date: 'Fall 2019 to Present',
+                date: 'Fall 2019 to Spring 2023',
             },
             {
                 title: 'Philosophy Department Social Chair',
                 description:
                     'Organize social activities for the department: a semesterly picnic and frequent happy hours.',
-                date: 'Fall 2019 to Present',
+                date: 'Fall 2019 to Spring 2023',
             },
             {
                 title: 'Graduate Student Representative',
@@ -337,11 +383,15 @@ export default {
         profession: {
             reviews: [
                 {
-                    title: 'iConference 2023',
+                    title: 'iConference',
                     number: 2,
                 },
                 {
                     title: 'Ethics and Information Technology',
+                    number: 2,
+                },
+                {
+                    title: 'Big Data & Society',
                     number: 1,
                 },
             ],

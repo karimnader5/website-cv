@@ -3,7 +3,6 @@ html {
     margin: 20px auto;
 }
 
-
 .print {
     margin: 20px 0px;
 }
@@ -35,6 +34,10 @@ h3 {
 h4 {
     margin: 0px;
     font-size: 18px;
+}
+
+h5 {
+    font-size: 14px;
 }
 
 .col-12,
@@ -72,6 +75,10 @@ section h6 {
     margin-bottom: 0px;
 }
 
+.presentation-list {
+    padding-top: 10px;
+}
+
 ol {
     padding-left: 0px;
 }
@@ -92,7 +99,6 @@ section a:hover {
 .service--description {
     padding-left: 20px;
 }
-
 
 .presentation--date {
     margin-left: -20px;

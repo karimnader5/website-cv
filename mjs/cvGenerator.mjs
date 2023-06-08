@@ -37,6 +37,29 @@ document.getElementById('areas').innerHTML = `
 
 `;
 
+document.getElementById('employment').innerHTML = `
+
+    <h3 class="title row">Employment</h3>
+    ${cvData.employment
+        .map(function (employment) {
+            return `
+        <div class="eduation row">
+        <h6 class="education--institution col-12"><strong>${
+            employment.institution
+        }</strong></h6>
+        <span class="education--info col-7">${employment.info}</span>
+        <span class="education--date col-5">${employment.date}</span>
+        ${
+            education.details
+                ? `<span class="education--details col-12">${education.details}</span>`
+                : ''
+        }
+        </div>`;
+        })
+        .join('')}
+
+`;
+
 document.getElementById('education').innerHTML = `
 
     <h3 class="title row">Education</h3>
@@ -44,7 +67,9 @@ document.getElementById('education').innerHTML = `
         .map(function (education) {
             return `
         <div class="eduation row">
-        <h6 class="education--institution col-12">${education.institution}</h6>
+        <h6 class="education--institution col-12"><strong>${
+            education.institution
+        }</strong></h6>
         <span class="education--info col-7">${education.info}</span>
         <span class="education--date col-5">${education.date}</span>
         ${
@@ -69,6 +94,7 @@ document.getElementById('publications').innerHTML = `
                 let regex = /(Nader, K.)/g;
                 return `
                 <li>
+                <div class="row">
                 ${
                     publication.link
                         ? `<a href=${publication.link} target="_blank">`
@@ -76,10 +102,11 @@ document.getElementById('publications').innerHTML = `
                 }
                 <h6 class="publication--title col-12">'${
                     publication.title
-                }'</h6></a>
+                }'</h6> </a>
                 <span class="publication--info col-12">(${
                     publication.date
                 }). <em>${publication.info}</em>${publication.issue ? ', ' + publication.issue : ''}.</span>
+                <div>
                 </li> 
                     `;
             })
@@ -93,6 +120,7 @@ document.getElementById('publications').innerHTML = `
                 let regex = /(Nader, K.)/g;
                 return `
             <li>
+            <div class="row">
             ${
                 publication.link
                     ? `<a href=${publication.link} target="_blank">`
@@ -108,6 +136,7 @@ document.getElementById('publications').innerHTML = `
             <span class="publication--info col-12">(${
                 publication.date
             }). ${publication.conference ? publication.info : publication.info.italics()}.</span>
+            <div>
             </li>
         `;
             })
@@ -153,7 +182,9 @@ document.getElementById('raships').innerHTML = `
 document.getElementById('presentations').innerHTML = `
 
     <h3 class="title row">Presentations</h3>
-    <ol>
+    <span>* Peer Reviewed</span>
+    <span>&#8224 Invited</span>
+    <ol class="presentation-list">
     ${cvData.presentations
         .map(function (presentation) {
             return `
@@ -161,10 +192,8 @@ document.getElementById('presentations').innerHTML = `
                 <div class="row">
                     <h6 class="col-12 presentation--title">${
                         presentation.peerReviewed ? '<span>∗</span>' : ''
-                    } 
-                    ${
-                        presentation.title
-                    } ${presentation.peerReviewed ? "<span class='small'>* Peer Reviewed</span>" : ''}</h6>
+                    } ${presentation.invited ? '<span>&#8224</span>' : ''}
+                    ${presentation.title} </h6>
                     <span class="col-7 presentation--info">${
                         presentation.info
                     }</span>
@@ -187,6 +216,7 @@ document.getElementById('teaching').innerHTML = `
 
     <h3 class="title row">Teaching Experience</h3>
     <h4 class="subtitle row">Instructor of Record</h4>
+    <h5>At UT Austin</h5>
         ${cvData.teaching.ai
             .map(function (teaching) {
                 return `
@@ -198,6 +228,7 @@ document.getElementById('teaching').innerHTML = `
             })
             .join('')}
     <h4 class="subtitle row">Teaching Assistant</h4>
+    <h5>At UT Austin</h5> 
     ${cvData.teaching.ta
         .map(function (teaching) {
             return `
@@ -284,11 +315,12 @@ document.getElementById('skills').innerHTML = `
 
 document.getElementById('references').innerHTML = `
 
-    <h3 class="title col-12">References</h3>
+    <h3 class="title row">References</h3>
+    <div class="row">
     ${cvData.references
         .map(function (reference) {
             return `
-        <div class="reference box col-6 row">
+        <div class="reference row col-6">
         <h6>${reference.name}</h6>
         <span class="col-12">${reference.department}</span>
         <span class="col-12">${reference.uni}</span>
@@ -297,5 +329,6 @@ document.getElementById('references').innerHTML = `
         `;
         })
         .join('')}
+    </div>
 
 `;
