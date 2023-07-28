@@ -19,7 +19,7 @@ export default {
             details:
                 'Dissertation: <i>Virtual wrongs as fictional wrongs: Ethics in virtual worlds</i> <br /> Committee: Kathleen Higgins (chair), Robbie Kubala, Julia Driver, and Christopher Bartel (Appalachian State University)',
             details2: '',
-            date: 'Expected July 2023',
+            date: 'July 2023',
         },
         {
             institution: 'Columbia University',
@@ -126,7 +126,7 @@ export default {
             date: 'February 2023',
         },
         {
-            title: 'Graduate School Continuing Fellowship (one year)',
+            title: 'Graduate School Continuing Fellowship (declined)',
             amount: '$53,000',
             date: 'February 2023',
         },

@@ -13,8 +13,8 @@ document.getElementById('header').innerHTML = `
     <section class="header row">
     <h1 class="header--name col">Karim Nader</h1>
     <span class="header--email col text-right">
-    <a href = "mailto: karim.nader@utexas.edu">
-        karim.nader@utexas.edu
+    <a href = "mailto: knader@mit.edu">
+        knader@mit.edu
     </a>
     <br />
     <a href = "https://karimnaderphilosophy.com">

@@ -82,6 +82,10 @@ document.getElementById('research-funding').innerHTML = `
     </dl>
     </details>
 
+    <div class="plato-aristotle">
+    <img display="block" src="pictures/plato-aristotle.png" alt="plato and aristotles">
+    </div>
+
 `;
 
 document.getElementById('talks').innerHTML = `
