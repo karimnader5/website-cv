@@ -209,7 +209,7 @@ export default {
         },
         {
             title: 'Dating apps and the gamification of dating',
-            info: 'Discrimination in Dating; Centre for the Experimental-Philosophical Study of Discrimination',
+            info: 'Discrimination in Dating; Centre for the Experimental-Philosophical Study of Discrimination; Aarhus University',
             date: 'September 2023',
             location: 'Aarhus, Denmark',
             peerReviewed: false,

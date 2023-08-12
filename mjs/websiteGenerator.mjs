@@ -91,14 +91,14 @@ document.getElementById('research-funding').innerHTML = `
 document.getElementById('talks').innerHTML = `
 
     <h2>Selected Presentations</h2>
-
+    <h6>* Peer Reviewed <br> † Invited</h6>    
     <dl>
     ${cvData.presentations
         .map(function (talk) {
             return `
         <dt>${
-            talk.title
-        }  ${talk.peerReviewed ? '<small>* Peer Reviewed</small>' : ''}</dt>
+            talk.peerReviewed ? '*' : ''
+        } ${talk.invited ? '†' : ''} ${talk.title}  </dt>
         <dd>
         <span class="talk-info">${talk.info}</span>
         <span class="talk-timeplace">${talk.date}; ${talk.location}</span>
