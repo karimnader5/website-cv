@@ -49,6 +49,7 @@ document.getElementById('employment').innerHTML = `
         }</strong></h6>
         <span class="education--info col-7">${employment.info}</span>
         <span class="education--date col-5">${employment.date}</span>
+        <span class="education--info col-12">${employment.info2}</span>
         ${
             education.details
                 ? `<span class="education--details col-12">${education.details}</span>`
@@ -135,7 +136,7 @@ document.getElementById('publications').innerHTML = `
             )}</span>
             <span class="publication--info col-12">(${
                 publication.date
-            }). ${publication.conference ? publication.info : publication.info.italics()}.</span>
+            }). ${publication.conference ? publication.info : publication.info.italics()}${publication.issue ? ' ' + publication.issue : ''}.</span>
             <div>
             </li>
         `;
