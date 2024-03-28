@@ -164,7 +164,7 @@ document.getElementById('awards').innerHTML = `
 
 `;
 
-document.getElementById('raships').innerHTML = `
+/* document.getElementById('raships').innerHTML = `
 
     <h3 class="title row">Research Assistantships</h3>
     ${cvData.raship
@@ -178,7 +178,7 @@ document.getElementById('raships').innerHTML = `
         })
         .join('')}
 
-`;
+`; */
 
 document.getElementById('presentations').innerHTML = `
 
@@ -217,8 +217,21 @@ document.getElementById('teaching').innerHTML = `
 
     <h3 class="title row">Teaching Experience</h3>
     <h4 class="subtitle row">Instructor of Record</h4>
+    <h5>At MIT</h5>
+    ${cvData.teaching.ai
+        .filter((item) => item.inst == 'mit')
+        .map(function (teaching) {
+            return `
+            <div class="teaching row">
+            <span class="col-7">${teaching.title}</span>
+            <span class="col-5">${teaching.semester}</span>
+            </div> 
+        `;
+        })
+        .join('')}
     <h5>At UT Austin</h5>
         ${cvData.teaching.ai
+            .filter((item) => item.inst == 'ut')
             .map(function (teaching) {
                 return `
                 <div class="teaching row">

@@ -67,9 +67,9 @@ document.getElementById('publications').innerHTML = `
 
 `;
 
-document.getElementById('research-funding').innerHTML = `
+/* document.getElementById('research-funding').innerHTML = `
 
-    <details><summary class="subsubtitle button">Research Funding</summary>
+    <details><summary class="subtitle button">Research Funding</summary>
 
     <dl>
     ${cvData.awards
@@ -86,7 +86,7 @@ document.getElementById('research-funding').innerHTML = `
     <img display="block" src="pictures/plato-aristotle.png" alt="plato and aristotles">
     </div>
 
-`;
+`; */
 
 document.getElementById('talks').innerHTML = `
 

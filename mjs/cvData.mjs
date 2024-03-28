@@ -281,12 +281,19 @@ export default {
     teaching: {
         ai: [
             {
+                title: 'Philosophy and the Arts',
+                semester: 'Spring 2024',
+                inst: 'mit',
+            },
+            {
                 title: 'Introduction to Symbolic Logic',
                 semester: 'Fall 2022',
+                inst: 'ut',
             },
             {
                 title: 'Ethics and Enlightenment',
                 semester: 'Fall 2021',
+                inst: 'ut',
             },
         ],
         ta: [
@@ -334,7 +341,7 @@ export default {
         other: [
             {
                 title: 'Trolling 101',
-                semester: 'Fall 2023',
+                semester: 'Fall 2023 and Spring 2024',
                 info: 'Research group in the social and ethical responsibilities of computing',
             },
             {
@@ -386,6 +393,18 @@ export default {
         ],
         profession: {
             reviews: [
+                {
+                    title: 'Theoria',
+                    number: 1,
+                },
+                {
+                    title: 'Philosophy and Technology',
+                    number: 1,
+                },
+                {
+                    title: 'Journal of the Philosophy of Games',
+                    number: 1,
+                },
                 {
                     title: 'Ethics and Information Technology',
                     number: 2,
