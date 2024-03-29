@@ -14,11 +14,10 @@ header {
     width: 100%;
     display: flex;
     flex-direction: row;
-    padding: 10px 20px;
+    padding-top: 20px;
     align-items: baseline;
     justify-content: space-between;
-    background-color: #001728;
-    color: white;
+    color: #001728;
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
     margin-bottom: 30px;
@@ -175,12 +174,11 @@ dd .talk-timeplace {
 
 #picture {
     display: grid;
-    grid-template-columns: 1fr 2fr;
+    grid-template-columns: 1fr;
     grid-template-rows: 1fr 0.1fr;
     grid-column-gap: 20px;
     grid-row-gap: 10px;
-    justify-items: start;
-    align-items: center;
+    justify-items: center;
 }
 
 .headshot {
@@ -190,9 +188,11 @@ dd .talk-timeplace {
 
 .social-links {
     display: grid;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
-    grid-row-gap: 15px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 15px;
     width: auto;
+    align-items: center;
+    justify-items: start;
 }
 
 .social-links img {
@@ -278,6 +278,10 @@ dd .talk-timeplace {
 }
 
 @media screen and (max-width: 885px) {
+    header {
+        margin: 20px;
+    }
+
     .flex-container > div {
         flex-basis: 100%;
         margin: 0px 20px;
