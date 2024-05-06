@@ -127,9 +127,7 @@ document.getElementById('publications').innerHTML = `
                     ? `<a href=${publication.link} target="_blank">`
                     : ''
             }
-            <h6 class="publication--title col-12">'${
-                publication.title
-            }'</h6></a> 
+            <h6 class="publication--title col-12">${publication.title}</h6></a> 
             <span class="publication--authors col-12">Authors: ${publication.authors.replace(
                 regex,
                 '<u>$1</u>'
@@ -209,7 +207,24 @@ document.getElementById('presentations').innerHTML = `
         `;
         })
         .join('')}
+
+
+    <h4 class="subtitle row">Comments Delivered</h4> 
+    ${cvData.comments.map(function (comment) {
+        return `
+        <li>
+        <div class="row">
+        <h6 class="col-12 presentation--title"><span class="notbold">Comments on </span>"${comment.title}"
+        </h6>
+        <span class="col-7 presentation--info">${comment.info}</span>
+        <span class="col-3 presentation--date">${comment.date}</span>
+        <span class="col-2 presentation--location">${comment.location}</span>
+        </div>
+        </li> `;
+    })}
+
     </ol>
+
 
 `;
 

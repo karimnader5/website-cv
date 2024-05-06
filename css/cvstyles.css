@@ -107,3 +107,7 @@ section a:hover {
 .presentation--info {
     padding-right: 15px;
 }
+
+.notbold {
+    font-weight: normal;
+}
