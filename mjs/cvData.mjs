@@ -36,6 +36,7 @@ export default {
             date: 'forthcoming',
             info: 'The Journal of Aesthetics and Art Criticism',
             type: 'philosophy',
+            link: 'https://doi.org/10.1093/jaac/kpae021',
             abstract:
                 'Virtual fictionalism is the view that virtual reality is a kind of fiction. We imagine that what we see and hear in virtual reality is real, although it is not. The problem with this view is that there are real moral concerns with our use of virtual reality, from violent video games to cases of virtual groping on social platforms. If what we do in virtual reality is just make-believe, the fictionalist cannot explain the real moral harms of our virtual actions. Call this the moral objection to virtual fictionalism. I address the objection in this paper by arguing for a new fictional account of virtual actions. Virtual fictionalists can take virtual actions to be happening within the fiction and consider users to act as characters or actors within the fictional world depicted in the virtual environment. Instead, I argue that virtual actions create fictional representations from outside the fiction; users act in virtual reality as an author might in their work. The alternative I present better addresses the moral objection to virtual fictionalism—it does not conflate the user with a fictional character. Our virtual actions create fictional representations, and we can morally evaluate them as such',
         },
