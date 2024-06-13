@@ -32,6 +32,20 @@ export default {
 
     publications: [
         {
+            title: 'The gamification of dating online',
+            date: 'forthcoming',
+            info: 'Theoria',
+            type: 'philosophy',
+            abstract: 'Dating apps like Tinder are designed to be played like a game. Users play by swiping left and right on others&apos; profiles to indicate whether they are romantically or sexually interested in them. They match with those who reciprocate their interest. The goal of the game is to match with as many people as possible, prioritizing rapid gratification over the pursuit of meaningful connections. Tinder’s design elements and monetization strategies incentivize users to prioritize gathering matches, replacing the complexity of actual dating with a series of discrete decisions. Playing the matching game on Tinder makes dating more immediately gratifying, so users have started to play the game as an end in itself. The app becomes a source of entertainment instead of a means to build valuable connections. This also transforms the activity of dating as users spend time building appealing profiles and attempt to manipulate the algorithm to maximize their matching potential. Gamifying our romantic and sexual lives has negative consequences on people’s self-image since their personal worth becomes entwined with their success on the app. Individuals are reduced to mere players in the game, and the algorithm itself disproportionately favors users with conventional preferences. Gamification can be dangerous when the boundary between the game and real life blurs.',
+        },
+        {
+            title: 'Tiki bars: Escapism without appropriation',
+            date: '2024',
+            info: 'Aesthetics for Birds',
+            type: 'blog',
+            link: 'https://aestheticsforbirds.com/2024/05/17/tiki-escapism-without-appropriation/',
+        },
+        {
             title: 'Virtual fictional actions',
             date: 'forthcoming',
             info: 'The Journal of Aesthetics and Art Criticism',
@@ -298,6 +312,11 @@ export default {
 
     teaching: {
         ai: [
+            {
+                title: 'Experiential Ethics',
+                semester: 'Summer 2024',
+                inst: 'mit',
+            },
             {
                 title: 'Philosophy and the Arts',
                 semester: 'Spring 2024',

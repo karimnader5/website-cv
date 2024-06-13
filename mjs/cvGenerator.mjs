@@ -141,6 +141,32 @@ document.getElementById('publications').innerHTML = `
             })
             .join('')}
 
+            <h4 class="subtitle row">Blog Posts, etc.</h4>
+
+
+            ${cvData.publications
+                .filter((item) => item.type == 'blog')
+                .map(function (publication) {
+                    return `
+                <li>
+                <div class="row">
+                ${
+                    publication.link
+                        ? `<a href=${publication.link} target="_blank">`
+                        : ''
+                }
+                <h6 class="publication--title col-12">${
+                    publication.title
+                }</h6></a>
+                <span class="publication--info col-12">(${
+                    publication.date
+                }). ${publication.conference ? publication.info : publication.info.italics()}${publication.issue ? ' ' + publication.issue : ''}.</span>
+                <div>
+                </li>
+            `;
+                })
+                .join('')}
+
     </ol>
 
 `;
