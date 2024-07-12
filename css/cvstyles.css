@@ -37,7 +37,8 @@ h4 {
 }
 
 h5 {
-    font-size: 14px;
+    font-size: 16px;
+    font-variant: small-caps;
 }
 
 .col-12,

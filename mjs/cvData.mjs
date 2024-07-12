@@ -36,6 +36,7 @@ export default {
             date: 'forthcoming',
             info: 'Theoria',
             type: 'philosophy',
+            link: 'https://onlinelibrary.wiley.com/doi/10.1111/theo.12549',
             abstract: 'Dating apps like Tinder are designed to be played like a game. Users play by swiping left and right on others&apos; profiles to indicate whether they are romantically or sexually interested in them. They match with those who reciprocate their interest. The goal of the game is to match with as many people as possible, prioritizing rapid gratification over the pursuit of meaningful connections. Tinder’s design elements and monetization strategies incentivize users to prioritize gathering matches, replacing the complexity of actual dating with a series of discrete decisions. Playing the matching game on Tinder makes dating more immediately gratifying, so users have started to play the game as an end in itself. The app becomes a source of entertainment instead of a means to build valuable connections. This also transforms the activity of dating as users spend time building appealing profiles and attempt to manipulate the algorithm to maximize their matching potential. Gamifying our romantic and sexual lives has negative consequences on people’s self-image since their personal worth becomes entwined with their success on the app. Individuals are reduced to mere players in the game, and the algorithm itself disproportionately favors users with conventional preferences. Gamification can be dangerous when the boundary between the game and real life blurs.',
         },
         {
@@ -308,6 +309,12 @@ export default {
             date: 'April 2024',
             location: 'Philadelphia, PA',
         },
+        {
+            title: 'Apt Imaginings: Fiction, Imagination, and Aboutness',
+            info: 'American Society for Aesthetics Annual Meeting',
+            date: 'October 2024',
+            location: 'Chicago, IL',
+        },
     ],
 
     teaching: {
@@ -379,7 +386,12 @@ export default {
             {
                 title: 'Trolling 101',
                 semester: 'Fall 2023 and Spring 2024',
-                info: 'Research group in the social and ethical responsibilities of computing',
+                info: 'Research group in the social and ethical responsibilities of computing on online discourse and internet humor',
+            },
+            {
+                title: 'Gamification',
+                semester: 'Fall 2024 and Spring 2025',
+                info: 'Research group in the social and ethical responsibilities of computing on gamification and value capture',
             },
             {
                 title: 'The role of philosophy in information studies',

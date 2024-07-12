@@ -49,6 +49,11 @@ h4 {
     font-size: 16pt;
 }
 
+h5 { 
+    font-size: 14pt;
+    font-variant: small-caps;
+}
+
 h6 {
     font-size: 14pt;
 }
