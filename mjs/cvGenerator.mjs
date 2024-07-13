@@ -247,7 +247,7 @@ document.getElementById('presentations').innerHTML = `
         <span class="col-2 presentation--location">${comment.location}</span>
         </div>
         </li> `;
-    })}
+    }).join('')}
 
     </ol>
 

@@ -33,7 +33,7 @@ export default {
     publications: [
         {
             title: 'The gamification of dating online',
-            date: 'forthcoming',
+            date: '2024',
             info: 'Theoria',
             type: 'philosophy',
             link: 'https://onlinelibrary.wiley.com/doi/10.1111/theo.12549',
@@ -48,7 +48,7 @@ export default {
         },
         {
             title: 'Virtual fictional actions',
-            date: 'forthcoming',
+            date: '2024',
             info: 'The Journal of Aesthetics and Art Criticism',
             type: 'philosophy',
             link: 'https://doi.org/10.1093/jaac/kpae021',
@@ -319,11 +319,6 @@ export default {
 
     teaching: {
         ai: [
-            {
-                title: 'Experiential Ethics',
-                semester: 'Summer 2024',
-                inst: 'mit',
-            },
             {
                 title: 'Philosophy and the Arts',
                 semester: 'Spring 2024',
