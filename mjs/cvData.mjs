@@ -37,7 +37,8 @@ export default {
             info: 'Theoria',
             type: 'philosophy',
             link: 'https://onlinelibrary.wiley.com/doi/10.1111/theo.12549',
-            abstract: 'Dating apps like Tinder are designed to be played like a game. Users play by swiping left and right on others&apos; profiles to indicate whether they are romantically or sexually interested in them. They match with those who reciprocate their interest. The goal of the game is to match with as many people as possible, prioritizing rapid gratification over the pursuit of meaningful connections. Tinder’s design elements and monetization strategies incentivize users to prioritize gathering matches, replacing the complexity of actual dating with a series of discrete decisions. Playing the matching game on Tinder makes dating more immediately gratifying, so users have started to play the game as an end in itself. The app becomes a source of entertainment instead of a means to build valuable connections. This also transforms the activity of dating as users spend time building appealing profiles and attempt to manipulate the algorithm to maximize their matching potential. Gamifying our romantic and sexual lives has negative consequences on people’s self-image since their personal worth becomes entwined with their success on the app. Individuals are reduced to mere players in the game, and the algorithm itself disproportionately favors users with conventional preferences. Gamification can be dangerous when the boundary between the game and real life blurs.',
+            abstract:
+                'Dating apps like Tinder are designed to be played like a game. Users play by swiping left and right on others&apos; profiles to indicate whether they are romantically or sexually interested in them. They match with those who reciprocate their interest. The goal of the game is to match with as many people as possible, prioritizing rapid gratification over the pursuit of meaningful connections. Tinder’s design elements and monetization strategies incentivize users to prioritize gathering matches, replacing the complexity of actual dating with a series of discrete decisions. Playing the matching game on Tinder makes dating more immediately gratifying, so users have started to play the game as an end in itself. The app becomes a source of entertainment instead of a means to build valuable connections. This also transforms the activity of dating as users spend time building appealing profiles and attempt to manipulate the algorithm to maximize their matching potential. Gamifying our romantic and sexual lives has negative consequences on people’s self-image since their personal worth becomes entwined with their success on the app. Individuals are reduced to mere players in the game, and the algorithm itself disproportionately favors users with conventional preferences. Gamification can be dangerous when the boundary between the game and real life blurs.',
         },
         {
             title: 'Tiki bars: Escapism without appropriation',
@@ -76,7 +77,6 @@ export default {
             abstract:
                 'Practice and research collaborations in the disaster domain have the potential to improve emergency management practices while also advancing disaster science theory. However, they also pose challenges as practitioners and researchers each have their own culture, history, values, incentives, and processes that do not always facilitate collaboration. In this paper, we reflect on a 6-month practice and research collaboration, where researchers and practitioners worked together to craft a social media monitoring system for emergency managers in response to the COVID-19 pandemic. The challenges we encountered in this project fall into two broad categories, job-related and timescale challenges. Using prior research on team science as a guide, we discuss several challenges we encountered in these two categories and show how our team sought to overcome them. We conclude with a set of best practices for improving practice and research collaborations.',
             conference: true,
-            issue: '(10 pages)',
             authors:
                 'Hughes, A., Stephens, K., Peterson, S., Purohit, H., Harris H., Senarath, Y., Jarvis S. A., Montagnolo, C., Nader, K.',
         },
@@ -117,7 +117,7 @@ export default {
             authors: 'Nader, K., Toprac, P., Scott, S., & Baker, S.',
             link: 'https://doi.org/10.1007/s00146-022-01427-w',
             type: 'empirical',
-            issue: '(14 pages)',
+            issue: '39, 713-726',
             abstract:
                 'Artificial intelligence (AI) is becoming part of our everyday experience and is expected to be ever more integrated into ordinary life for many years to come. Thus, it is important for those in product development, research, and public policy to understand how the public’s perception of AI is shaped. In this study, we conducted focus groups and an online survey to determine the knowledge of AI held by the American public, and to judge whether entertainment media is a major influence on how Americans perceive AI. What we found is that the American public’s knowledge of AI is patchy: some have a good understanding of what is and what is not AI, but many do not. When it came to understanding what AI can do, most respondents believe that AI could “replace human jobs” but few thought that it could “feel emotion.” Most respondents were optimistic about the future and impact of AI, though about one third were not sure. Most respondents also did not think they could develop an emotional bond with or be comfortable being provided care by an AI. Regarding the influence of entertainment media on perceptions of AI, we found a significant relationship (p < 0.5) between people’s beliefs about AI in entertainment media and their beliefs about AI in reality. Those who believe AI is realistically depicted in entertainment media were more likely to see AIs as potential emotional partners or apocalyptic robots than to imagine AIs taking over jobs or operating as surveillance tools.',
         },
@@ -229,6 +229,14 @@ export default {
 
     presentations: [
         {
+            title: 'Desires in interactive fiction',
+            info: 'American Philosophical Association Eastern Division Meeting',
+            date: 'January 2025',
+            location: 'New York, NY',
+            peerReviewed: true,
+            invited: false,
+        },
+        {
             title: 'Virtual fictional actions',
             info: 'American Society for Aesthetics Annual Meeting',
             date: 'November 2023',
@@ -320,6 +328,11 @@ export default {
     teaching: {
         ai: [
             {
+                title: 'Ethics of Technology (with Kevin Mills)',
+                semester: 'Spring 2025',
+                inst: 'mit',
+            },
+            {
                 title: 'Philosophy and the Arts',
                 semester: 'Spring 2024',
                 inst: 'mit',
@@ -379,25 +392,48 @@ export default {
         ],
         other: [
             {
-                title: 'Trolling 101',
-                semester: 'Fall 2023 and Spring 2024',
-                info: 'Research group in the social and ethical responsibilities of computing on online discourse and internet humor',
+                title: 'Experiential Ethics',
+                semester: 'Summer 2024 and Summer 2025',
+                info: 'Course and curriculum development and instructor training for the Office of Experiential Learning at MIT.',
             },
             {
                 title: 'Gamification',
                 semester: 'Fall 2024 and Spring 2025',
-                info: 'Research group in the social and ethical responsibilities of computing on gamification and value capture',
+                info: 'Research group in the social and ethical responsibilities of computing on gamification and value capture.',
+            },
+            {
+                title: 'The gamification of dating online',
+                semester: 'Fall 2024',
+                info: 'Guest lecture for Arriana Falbo, “Should life be like a game?”',
+            },
+            {
+                title: 'Trolling 101',
+                semester: 'Fall 2023 and Spring 2024',
+                info: 'Research group in the social and ethical responsibilities of computing on online discourse and internet humor.',
+            },
+            {
+                title: 'Introduction to Technology Ethics',
+                semester: 'Spring 2022',
+                info: 'Course development for the College of Liberal Arts at UT Austin.',
             },
             {
                 title: 'The role of philosophy in information studies',
                 semester: 'Spring 2021',
-                info: 'Guest lecture for Kenneth Fleischmann, “Disciplinary Foundations for Information Studies”',
+                info: 'Guest lecture for Kenneth Fleischmann, “Disciplinary Foundations for Information Studies.”',
             },
         ],
     },
 
     service: {
-        department: [
+        mit: [
+            {
+                title: 'Teχnē Organizing Committee',
+                description:
+                    'Teχnē is an interdisciplinary conference on the ethics of technology organized in collaboration by MIT, Harvard, and Northeastern.',
+                date: 'Fall 2024 and Spring 2025',
+            },
+        ],
+        utaustin: [
             {
                 title: 'COMPASS Coordinator',
                 description:
@@ -495,6 +531,12 @@ export default {
             department: 'Department of Philosophy',
             uni: 'The University of Texas at Austin',
             email: 'kmhiggins@austin.utexas.edu',
+        },
+        {
+            name: 'Bradford Skow',
+            department: 'Department of Linguistics and Philosophy',
+            uni: 'Massachusetts Institute of Technology',
+            email: 'bskow@mit.edu',
         },
         {
             name: 'Robbie Kubala',

@@ -236,8 +236,9 @@ document.getElementById('presentations').innerHTML = `
 
 
     <h4 class="subtitle row">Comments Delivered</h4> 
-    ${cvData.comments.map(function (comment) {
-        return `
+    ${cvData.comments
+        .map(function (comment) {
+            return `
         <li>
         <div class="row">
         <h6 class="col-12 presentation--title"><span class="notbold">Comments on </span>"${comment.title}"
@@ -247,7 +248,8 @@ document.getElementById('presentations').innerHTML = `
         <span class="col-2 presentation--location">${comment.location}</span>
         </div>
         </li> `;
-    }).join('')}
+        })
+        .join('')}
 
     </ol>
 
@@ -256,7 +258,7 @@ document.getElementById('presentations').innerHTML = `
 
 document.getElementById('teaching').innerHTML = `
 
-    <h3 class="title row">Teaching Experience</h3>
+    <h3 class="title row">Teaching </h3>
     <h4 class="subtitle row">Instructor of Record</h4>
     <h5>At MIT</h5>
     ${cvData.teaching.ai
@@ -301,9 +303,9 @@ document.getElementById('teaching').innerHTML = `
         .map(function (teaching) {
             return `
             <div class="teaching row">
-            <span class="col-7">${teaching.title}</span>
+            <h6 class="col-7">${teaching.title}</h6>
             <span class="col-5">${teaching.semester}</span>
-            <span class="col-12">${teaching.info}</span>
+            <span class="col-12 font-italic">${teaching.info}</span>
             </div> 
         `;
         })
@@ -314,9 +316,23 @@ document.getElementById('teaching').innerHTML = `
 document.getElementById('service').innerHTML = `
 
     <h3 class="title row">Service</h3>
+
+        <h4 class="subtitle row">At MIT</h4>
+
+    ${cvData.service.mit
+        .map(function (service) {
+            return `
+        <div class="service row">
+        <h6 class="service--title col-7">${service.title}</h6>
+        <span class="service--date col-5">${service.date}</span>
+        <span class="service--description font-italic col-12">${service.description}</span>
+        </div>
+        `;
+        })
+        .join('')}
     <h4 class="subtitle row">At UT Austin</h4>
 
-    ${cvData.service.department
+    ${cvData.service.utaustin
         .map(function (service) {
             return `
         <div class="service row">
