@@ -134,7 +134,7 @@ document.getElementById('publications').innerHTML = `
             )}</span>
             <span class="publication--info col-12">(${
                 publication.date
-            }). ${publication.conference ? publication.info : publication.info.italics()},${publication.issue ? ' ' + publication.issue : ''}.</span>
+            }). ${publication.conference ? publication.info : publication.info.italics()}${publication.issue ? ', ' + publication.issue : ''}.</span>
             <div>
             </li>
         `;
