@@ -101,9 +101,9 @@ document.getElementById('publications').innerHTML = `
                         ? `<a href=${publication.link} target="_blank">`
                         : ''
                 }
-                <h6 class="publication--title col-12">'${
+                <h6 class="publication--title col-12">${
                     publication.title
-                }'</h6> </a>
+                }</h6> </a>
                 <span class="publication--info col-12">(${
                     publication.date
                 }). <em>${publication.info}</em>${publication.issue ? ', ' + publication.issue : ''}.</span>
@@ -134,7 +134,7 @@ document.getElementById('publications').innerHTML = `
             )}</span>
             <span class="publication--info col-12">(${
                 publication.date
-            }). ${publication.conference ? publication.info : publication.info.italics()}${publication.issue ? ' ' + publication.issue : ''}.</span>
+            }). ${publication.conference ? publication.info : publication.info.italics()},${publication.issue ? ' ' + publication.issue : ''}.</span>
             <div>
             </li>
         `;
@@ -260,6 +260,7 @@ document.getElementById('teaching').innerHTML = `
 
     <h3 class="title row">Teaching </h3>
     <h4 class="subtitle row">Instructor of Record</h4>
+    <ol>
     <h5>At MIT</h5>
     ${cvData.teaching.ai
         .filter((item) => item.inst == 'mit')
@@ -284,6 +285,8 @@ document.getElementById('teaching').innerHTML = `
             `;
             })
             .join('')}
+
+        </ol>
     <h4 class="subtitle row">Teaching Assistant</h4>
     <h5>At UT Austin</h5> 
     ${cvData.teaching.ta
@@ -303,9 +306,9 @@ document.getElementById('teaching').innerHTML = `
         .map(function (teaching) {
             return `
             <div class="teaching row">
-            <h6 class="col-7">${teaching.title}</h6>
-            <span class="col-5">${teaching.semester}</span>
-            <span class="col-12 font-italic">${teaching.info}</span>
+            <h6 class="col-7 other--teaching">${teaching.title}</h6>
+            <span class="col-5 other--teaching">${teaching.semester}</span>
+            <span class="col-12 other--teaching--info">${teaching.info}</span>
             </div> 
         `;
         })
@@ -325,7 +328,7 @@ document.getElementById('service').innerHTML = `
         <div class="service row">
         <h6 class="service--title col-7">${service.title}</h6>
         <span class="service--date col-5">${service.date}</span>
-        <span class="service--description font-italic col-12">${service.description}</span>
+        <span class="service--info col-12">${service.description}</span>
         </div>
         `;
         })
@@ -336,9 +339,9 @@ document.getElementById('service').innerHTML = `
         .map(function (service) {
             return `
         <div class="service row">
-        <h6 class="service--title col-7">${service.title}</h6>
+        <h6 class="service--title font-bold col-7">${service.title}</h6>
         <span class="service--date col-5">${service.date}</span>
-        <span class="service--description font-italic col-12">${service.description}</span>
+        <span class="service--info col-12">${service.description}</span>
         </div>
         `;
         })

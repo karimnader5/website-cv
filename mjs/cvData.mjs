@@ -312,16 +312,16 @@ export default {
 
     comments: [
         {
-            title: 'Is AI a threat to Human Music?',
-            info: 'American Society for Aesthetics Eastern Division Meeting',
-            date: 'April 2024',
-            location: 'Philadelphia, PA',
-        },
-        {
             title: 'Apt Imaginings: Fiction, Imagination, and Aboutness',
             info: 'American Society for Aesthetics Annual Meeting',
             date: 'October 2024',
             location: 'Chicago, IL',
+        },
+        {
+            title: 'Is AI a threat to Human Music?',
+            info: 'American Society for Aesthetics Eastern Division Meeting',
+            date: 'April 2024',
+            location: 'Philadelphia, PA',
         },
     ],
 
@@ -427,9 +427,9 @@ export default {
     service: {
         mit: [
             {
-                title: 'Teχnē Organizing Committee',
+                title: 'Teχnē Committee',
                 description:
-                    'Teχnē is an interdisciplinary conference on the ethics of technology organized in collaboration by MIT, Harvard, and Northeastern.',
+                    'Solicit and review papers for Teχnē is an interdisciplinary conference on the ethics of technology organized in collaboration by MIT, Harvard, and Northeastern.',
                 date: 'Fall 2024 and Spring 2025',
             },
         ],
@@ -475,15 +475,15 @@ export default {
             reviews: [
                 {
                     title: 'Metaphysics',
-                    number: 1,
+                    number: 3,
                 },
                 {
                     title: 'Theoria',
-                    number: 1,
+                    number: 2,
                 },
                 {
                     title: 'Philosophy and Technology',
-                    number: 1,
+                    number: 2,
                 },
                 {
                     title: 'Journal of the Philosophy of Games',

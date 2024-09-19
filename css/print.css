@@ -60,10 +60,23 @@ h6 {
 
 .col-12,
 .col-7,
+.col-6,
 .col-5,
 .col-3,
 .col-2 {
     padding: 0px;
+}
+
+.service--title,
+.service--date,
+.service--info {
+    display: inline-block;
+}
+
+.other--teaching--info,
+.service--info {
+    margin-top: -0.4em;
+    font-style: italic;
 }
 
 .title {
@@ -80,7 +93,8 @@ h6 {
 .publication--authors,
 .education--info,
 .raship--info,
-.presentation--info {
+.presentation--info,
+.other--teaching {
     display: inline-block;
 }
 
@@ -108,6 +122,10 @@ section a {
 
 section a:hover {
     text-decoration: none;
+}
+
+.service {
+    gap: 0px;
 }
 
 @page {

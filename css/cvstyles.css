@@ -48,6 +48,13 @@ h5 {
 .col-3,
 .col-2 {
     padding: 0px;
+    margin: 0px;
+}
+
+.other--teaching--info,
+.service--info {
+    margin-top: -0.4em;
+    font-style: italic;
 }
 
 .title {
@@ -68,8 +75,13 @@ section {
 .publication--authors,
 .education--info,
 .raship--info,
-.presentation--info {
+.presentation--info,
+.other--teaching {
     display: inline-block;
+}
+
+.service {
+    gap: 0px;
 }
 
 section h6 {
