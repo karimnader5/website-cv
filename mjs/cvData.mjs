@@ -393,7 +393,7 @@ export default {
         other: [
             {
                 title: 'Experiential Ethics',
-                semester: 'Summer 2024 and Summer 2025',
+                semester: 'Fall 2023 to Summer 2025',
                 info: 'Course and curriculum development and instructor training for the Office of Experiential Learning at MIT.',
             },
             {

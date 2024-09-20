@@ -75,7 +75,8 @@ h6 {
 
 .other--teaching--info,
 .service--info {
-    margin-top: -0.4em;
+    margin-top: -0.2em;
+    line-height: -0.2em;
     font-style: italic;
 }
 
