@@ -1,7 +1,7 @@
 export default {
     areas: {
-        aos: 'Ethics of Information and Technology, Aesthetics',
-        aoc: 'Epistemology, Normative Ethics',
+        aos: 'Ethics of Technology, Aesthetics',
+        aoc: 'Normative Ethics, Epistemology',
     },
 
     employment: [
@@ -164,11 +164,11 @@ export default {
             amount: '$2,750',
             date: 'July 2022',
         },
-        {
+        /* {
             title: 'Summer Travel Funding Award',
             amount: '$2,000',
             date: 'May 2022',
-        },
+        },*/
         {
             title: 'Cogburn Graduate Essay Prize',
             amount: '$500',
@@ -189,11 +189,11 @@ export default {
             amount: '$6,000',
             date: 'April 2022',
         },
-        {
+        /*{
             title: 'Graduate Student Assembly Travel Award',
             amount: '$500',
             date: 'April 2021',
-        },
+        },*/
         {
             title: 'Vice-President for Research Special Research Grant',
             amount: '$900',
@@ -209,11 +209,11 @@ export default {
             amount: '$3,960',
             date: 'May 2020',
         },
-        {
+        /*{
             title: 'Professional Development Award',
             amount: '$400',
             date: 'February 2020',
-        },
+        },*/
     ],
 
     raship: [
@@ -292,14 +292,14 @@ export default {
             peerReviewed: true,
             invited: false,
         },
-        {
+        /* {
             title: 'Testimonial dogmatism',
             info: 'UT Austin Epistemology Reading Group',
             date: 'February 2021',
             location: 'Austin, TX',
             peerReviewed: false,
             invited: false,
-        },
+        },*/
         {
             title: 'Do we have a right to be swiped?',
             info: 'The University of Arizona Feminist Philosophy Conference',
@@ -401,11 +401,11 @@ export default {
                 semester: 'Fall 2024 and Spring 2025',
                 info: 'Research group in the social and ethical responsibilities of computing on gamification and value capture.',
             },
-            {
+            /*{
                 title: 'The gamification of dating online',
                 semester: 'Fall 2024',
                 info: 'Guest lecture for Arriana Falbo, “Should life be like a game?”',
-            },
+            },*/
             {
                 title: 'Trolling 101',
                 semester: 'Fall 2023 and Spring 2024',
@@ -416,11 +416,11 @@ export default {
                 semester: 'Spring 2022',
                 info: 'Course development for the College of Liberal Arts at UT Austin.',
             },
-            {
+            /* {
                 title: 'The role of philosophy in information studies',
                 semester: 'Spring 2021',
                 info: 'Guest lecture for Kenneth Fleischmann, “Disciplinary Foundations for Information Studies.”',
-            },
+            },*/
         ],
     },
 
@@ -440,12 +440,12 @@ export default {
                     'Select readings, solicit and review applications, and oversee weekend activities for COMPASS: a workshop for undergraduate students from historically underrepresented communities to discuss works of feminist philosophy.',
                 date: 'Fall 2020 to Spring 2023',
             },
-            {
+            /*{
                 title: 'Philosophy Department Coding Group Coordinator',
                 description:
                     'Assign lessons and projects, review and debug code.',
                 date: 'Summer 2022 to Spring 2023',
-            },
+            },*/
             {
                 title: 'Teaching Assistant Orientation Leader',
                 description:
@@ -453,11 +453,11 @@ export default {
                 date: 'Fall 2021 to Spring 2023',
             },
 
-            {
+            /*{
                 title: 'Philosophy & Meditation Group Coordinator',
                 description: 'Lead a weekly one-hour meditation sitting.',
                 date: 'Fall 2019 to Spring 2023',
-            },
+            },*/
             {
                 title: 'Graduate Student Representative',
                 description:
@@ -532,12 +532,7 @@ export default {
             uni: 'The University of Texas at Austin',
             email: 'kmhiggins@austin.utexas.edu',
         },
-        {
-            name: 'Bradford Skow',
-            department: 'Department of Linguistics and Philosophy',
-            uni: 'Massachusetts Institute of Technology',
-            email: 'bskow@mit.edu',
-        },
+
         {
             name: 'Robbie Kubala',
             department: 'Department of Philosophy',
@@ -545,16 +540,22 @@ export default {
             email: 'rkubala@utexas.edu',
         },
         {
+            name: 'Bradford Skow',
+            department: 'Department of Linguistics and Philosophy',
+            uni: 'Massachusetts Institute of Technology',
+            email: 'bskow@mit.edu',
+        },
+        {
             name: 'Samuel Baker',
             department: 'Department of English',
             uni: 'The University of Texas at Austin',
             email: 'sebaker@austin.utexas.edu',
         },
-        {
+        /* {
             name: 'Josh Dever (teaching)',
             department: 'Department of Philosophy',
             uni: 'The University of Texas at Austin',
             email: 'dever@austin.utexas.edu',
-        },
+        },*/
     ],
 };
