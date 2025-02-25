@@ -1,6 +1,6 @@
 export default {
     areas: {
-        aos: 'Ethics of Technology, Aesthetics',
+        aos: 'Technology Ethics, Aesthetics, Social and Moral Philosophy',
         aoc: 'Normative Ethics, Epistemology',
     },
 
@@ -33,7 +33,7 @@ export default {
     publications: [
         {
             title: 'The gamification of dating online',
-            date: '2024',
+            date: 2024,
             info: 'Theoria',
             type: 'philosophy',
             link: 'https://onlinelibrary.wiley.com/doi/10.1111/theo.12549',
@@ -42,7 +42,7 @@ export default {
         },
         {
             title: 'Tiki bars: Escapism without appropriation',
-            date: '2024',
+            date: 2024,
             info: 'Aesthetics for Birds',
             type: 'blog',
             link: 'https://aestheticsforbirds.com/2024/05/17/tiki-escapism-without-appropriation/',
@@ -52,11 +52,12 @@ export default {
             date: '2024',
             info: 'The Journal of Aesthetics and Art Criticism',
             type: 'philosophy',
+            issue: '82(4), 418-429',
             link: 'https://doi.org/10.1093/jaac/kpae021',
             abstract:
                 'Virtual fictionalism is the view that virtual reality is a kind of fiction. We imagine that what we see and hear in virtual reality is real, although it is not. The problem with this view is that there are real moral concerns with our use of virtual reality, from violent video games to cases of virtual groping on social platforms. If what we do in virtual reality is just make-believe, the fictionalist cannot explain the real moral harms of our virtual actions. Call this the moral objection to virtual fictionalism. I address the objection in this paper by arguing for a new fictional account of virtual actions. Virtual fictionalists can take virtual actions to be happening within the fiction and consider users to act as characters or actors within the fictional world depicted in the virtual environment. Instead, I argue that virtual actions create fictional representations from outside the fiction; users act in virtual reality as an author might in their work. The alternative I present better addresses the moral objection to virtual fictionalism—it does not conflate the user with a fictional character. Our virtual actions create fictional representations, and we can morally evaluate them as such',
         },
-        {
+        /*{
             title: 'Human-AI teaming during an ongoing disaster: How scripts around training and feedback reveal this is a form of human-machine communication',
             date: '2023',
             info: 'Human-Machine Communication',
@@ -79,40 +80,10 @@ export default {
             conference: true,
             authors:
                 'Hughes, A., Stephens, K., Peterson, S., Purohit, H., Harris H., Senarath, Y., Jarvis S. A., Montagnolo, C., Nader, K.',
-        },
-        {
-            title: 'Video game fictions: A dual-work view',
-            date: '2022',
-            info: 'Journal of the Philosophy of Games',
-            type: 'philosophy',
-            issue: '4 (1), 1-17',
-            link: 'https://journals.uio.no/JPG/article/view/9230',
-            abstract:
-                'Video games fictions are interactive: some of the content is set by the game designer and some is set by the player. However, philosophers disagree over how this interaction is reflected within the fictional content of video games. First, I will show that games and playthroughs are two distinct works of fiction with their associated fictional content. Second, I argue that players engage with both fictional works when playing a video game. They imagine the fictional truths associated with the game and those associated with their playthrough. Thus, I defend what I will call a Dual-Work View of our engagement with video game fictions. To do so, I show that games have accessible fictional content, that games are distinctively incomplete fictions, and that players engage with this distinctive incompleteness. My goal is to offer a clear account of the fictional content of video games.',
-        },
-        {
-            title: 'Dating through the filters',
-            date: '2021',
-            info: 'Social Philosophy and Policy',
-            link: 'https://doi.org/10.1017/S0265052521000133',
-            issue: '37 (2), 237-248',
-            type: 'philosophy',
-            abstract:
-                'In this essay, I explore ethical considerations that might arise from the use of collaborative filtering algorithms on dating apps. Collaborative filtering algorithms can predict the preferences of a target user by looking at the past behavior of similar users. By recommending products through this process, they can influence the news we read, the movies we watch, and more. They are extremely powerful and effective on platforms like Amazon and Google. Recommender systems on dating apps are likely to group people by race, since they exhibit similar patterns of behavior: users on dating platforms seem to segregate themselves based on race, exclude certain races from romantic and sexual consideration (except their own), and generally show a preference for white men and women. As collaborative filtering algorithms learn from these patterns to predict preferences and build recommendations, they can homogenize the behavior of dating app users and exacerbate biased sexual and romantic behavior.',
-        },
-        {
-            title: "Virtual competitions and the gamer's dilemma",
-            date: '2020',
-            info: 'Ethics and Information Technology',
-            issue: '22, 239-245',
-            link: 'https://doi.org/10.1007/s10676-020-09532-4',
-            type: 'philosophy',
-            abstract:
-                'This paper expands Rami Ali’s dissolution of the gamer’s dilemma. Morgan Luck’s gamer’s dilemma rests on our having diverging intuition when considering virtual murder and virtual child molestation in video games. Virtual murder is seemingly permissible, when virtual child molestation is not and there is no obvious morally relevant difference between the two. Ali argues that virtual murder and virtual child molestation are equally permissible/impermissible when considered under different modes of engagement. To this end, Ali distinguishes between story-telling gameplay and simulation games, discussing both in depth. I build on the dissolution by looking into competitive gameplay in order to consider what the morally relevant difference between virtual murder and virtual child molestation might be when competing in a video game. I argue that when competitors consent to participate in a competition, the rules of the competition supersede everyday moral intuitions. As such, virtual competitions ought to represent such consent from virtual characters. Virtual children cannot be represented as giving consent to be molested because (1) children cannot be represented as giving sexual consent, and (2) consent to be possibly molested cannot be given. This creates a morally relevant difference between murder and molestation. By fully addressing competitive gameplay, I answer Luck’s worry that Ali’s dissolution is incomplete.',
-        },
+        },*/
         {
             title: 'Public understanding of artificial intelligence through entertainment media',
-            date: '2022',
+            date: 2022,
             info: 'AI & Society',
             authors: 'Nader, K., Toprac, P., Scott, S., & Baker, S.',
             link: 'https://doi.org/10.1007/s00146-022-01427-w',
@@ -122,8 +93,39 @@ export default {
                 'Artificial intelligence (AI) is becoming part of our everyday experience and is expected to be ever more integrated into ordinary life for many years to come. Thus, it is important for those in product development, research, and public policy to understand how the public’s perception of AI is shaped. In this study, we conducted focus groups and an online survey to determine the knowledge of AI held by the American public, and to judge whether entertainment media is a major influence on how Americans perceive AI. What we found is that the American public’s knowledge of AI is patchy: some have a good understanding of what is and what is not AI, but many do not. When it came to understanding what AI can do, most respondents believe that AI could “replace human jobs” but few thought that it could “feel emotion.” Most respondents were optimistic about the future and impact of AI, though about one third were not sure. Most respondents also did not think they could develop an emotional bond with or be comfortable being provided care by an AI. Regarding the influence of entertainment media on perceptions of AI, we found a significant relationship (p < 0.5) between people’s beliefs about AI in entertainment media and their beliefs about AI in reality. Those who believe AI is realistically depicted in entertainment media were more likely to see AIs as potential emotional partners or apocalyptic robots than to imagine AIs taking over jobs or operating as surveillance tools.',
         },
         {
+            title: 'Video game fictions: A dual-work view',
+            date: 2022,
+            info: 'Journal of the Philosophy of Games',
+            type: 'philosophy',
+            issue: '4(1), 1-17',
+            link: 'https://journals.uio.no/JPG/article/view/9230',
+            abstract:
+                'Video games fictions are interactive: some of the content is set by the game designer and some is set by the player. However, philosophers disagree over how this interaction is reflected within the fictional content of video games. First, I will show that games and playthroughs are two distinct works of fiction with their associated fictional content. Second, I argue that players engage with both fictional works when playing a video game. They imagine the fictional truths associated with the game and those associated with their playthrough. Thus, I defend what I will call a Dual-Work View of our engagement with video game fictions. To do so, I show that games have accessible fictional content, that games are distinctively incomplete fictions, and that players engage with this distinctive incompleteness. My goal is to offer a clear account of the fictional content of video games.',
+        },
+        {
+            title: 'Dating through the filters',
+            date: 2021,
+            info: 'Social Philosophy and Policy',
+            link: 'https://doi.org/10.1017/S0265052521000133',
+            issue: '37(2), 237-248',
+            type: 'philosophy',
+            abstract:
+                'In this essay, I explore ethical considerations that might arise from the use of collaborative filtering algorithms on dating apps. Collaborative filtering algorithms can predict the preferences of a target user by looking at the past behavior of similar users. By recommending products through this process, they can influence the news we read, the movies we watch, and more. They are extremely powerful and effective on platforms like Amazon and Google. Recommender systems on dating apps are likely to group people by race, since they exhibit similar patterns of behavior: users on dating platforms seem to segregate themselves based on race, exclude certain races from romantic and sexual consideration (except their own), and generally show a preference for white men and women. As collaborative filtering algorithms learn from these patterns to predict preferences and build recommendations, they can homogenize the behavior of dating app users and exacerbate biased sexual and romantic behavior.',
+        },
+        {
+            title: "Virtual competitions and the gamer's dilemma",
+            date: 2020,
+            info: 'Ethics and Information Technology',
+            issue: '22, 239-245',
+            link: 'https://doi.org/10.1007/s10676-020-09532-4',
+            type: 'philosophy',
+            abstract:
+                'This paper expands Rami Ali’s dissolution of the gamer’s dilemma. Morgan Luck’s gamer’s dilemma rests on our having diverging intuition when considering virtual murder and virtual child molestation in video games. Virtual murder is seemingly permissible, when virtual child molestation is not and there is no obvious morally relevant difference between the two. Ali argues that virtual murder and virtual child molestation are equally permissible/impermissible when considered under different modes of engagement. To this end, Ali distinguishes between story-telling gameplay and simulation games, discussing both in depth. I build on the dissolution by looking into competitive gameplay in order to consider what the morally relevant difference between virtual murder and virtual child molestation might be when competing in a video game. I argue that when competitors consent to participate in a competition, the rules of the competition supersede everyday moral intuitions. As such, virtual competitions ought to represent such consent from virtual characters. Virtual children cannot be represented as giving consent to be molested because (1) children cannot be represented as giving sexual consent, and (2) consent to be possibly molested cannot be given. This creates a morally relevant difference between murder and molestation. By fully addressing competitive gameplay, I answer Luck’s worry that Ali’s dissolution is incomplete.',
+        },
+
+        {
             title: 'Folk theories and user strategies on dating apps: How users understand and manage their experience with algorithmic matchmaking',
-            date: '2022',
+            date: 2022,
             info: 'Information for a Better World: Shaping the Global Future. iConference 2022',
             conference: true,
             authors: 'Nader, K. & Lee, M.K.',
@@ -135,7 +137,7 @@ export default {
         },
         {
             title: 'Online-computer-mediated interviews and observations: Overcoming challenges and establishing best practices in a Human-AI teaming context',
-            date: '2021',
+            date: 2021,
             info: 'Proceedings of the 54rd Annual Hawaii International Conference on Social Systems',
             conference: true,
             authors:
@@ -246,7 +248,7 @@ export default {
         },
         {
             title: 'Dating apps and the gamification of dating',
-            info: 'Discrimination in Dating; Centre for the Experimental-Philosophical Study of Discrimination; Aarhus University',
+            info: 'Centre for the Experimental-Philosophical Study of Discrimination; Aarhus University',
             date: 'September 2023',
             location: 'Aarhus, Denmark',
             peerReviewed: false,
@@ -394,12 +396,12 @@ export default {
             {
                 title: 'Experiential Ethics',
                 semester: 'Fall 2023 to Summer 2025',
-                info: 'Course and curriculum development and instructor training for the Office of Experiential Learning at MIT.',
+                info: 'Curriculum development and instructor training for the Office of Experiential Learning at MIT.',
             },
             {
                 title: 'Gamification',
                 semester: 'Fall 2024 and Spring 2025',
-                info: 'Research group in the social and ethical responsibilities of computing on gamification and value capture.',
+                info: 'Research group in the social and ethical responsibilities of computing.',
             },
             /*{
                 title: 'The gamification of dating online',
@@ -409,7 +411,7 @@ export default {
             {
                 title: 'Trolling 101',
                 semester: 'Fall 2023 and Spring 2024',
-                info: 'Research group in the social and ethical responsibilities of computing on online discourse and internet humor.',
+                info: 'Research group in the social and ethical responsibilities of computing.',
             },
             {
                 title: 'Introduction to Technology Ethics',
@@ -551,11 +553,11 @@ export default {
             uni: 'The University of Texas at Austin',
             email: 'sebaker@austin.utexas.edu',
         },
-        /* {
+        {
             name: 'Josh Dever (teaching)',
             department: 'Department of Philosophy',
             uni: 'The University of Texas at Austin',
             email: 'dever@austin.utexas.edu',
-        },*/
+        },
     ],
 };

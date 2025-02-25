@@ -1,7 +1,11 @@
 :root {
     --dark-blue: #001728;
     --light-gray: white;
-    --font-family: 'Segoe UI', Helvetica, Arial, sans-serif;
+    --font-family: 'Georgia', sans-serif;
+}
+
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 html {
@@ -159,8 +163,6 @@ dd .talk-timeplace {
     flex-wrap: wrap;
     align-items: flex-start;
     justify-content: space-between;
-    row-gap: 20px;
-    column-gap: 20px;
 }
 
 #about-me-flex > div {
@@ -178,6 +180,11 @@ dd .talk-timeplace {
     grid-template-rows: 1fr 0.1fr;
     grid-column-gap: 20px;
     grid-row-gap: 10px;
+    justify-items: center;
+}
+
+#bio {
+    display: grid;
     justify-items: center;
 }
 
@@ -201,6 +208,10 @@ dd .talk-timeplace {
     object-fit: cover;
 }
 
+.email {
+    padding: 10px;
+}
+
 .email p {
     display: block;
     background-color: var(--dark-blue);
@@ -212,6 +223,7 @@ dd .talk-timeplace {
     padding: 10px 0px;
     border-radius: 10px;
     border: none;
+    margin: 0px;
 }
 
 .cv {
@@ -301,7 +313,7 @@ dd .talk-timeplace {
     font-family: var(--font-family);
     font-weight: bold;
     font-size: 20px;
-    margin: 10px 0px 10px 0px;
+    margin: 10px 0px 0px 0px;
     cursor: pointer;
     padding: 8px;
     border-radius: 5px;
@@ -325,13 +337,7 @@ dd .talk-timeplace {
 
 .collapsible-head {
     width: 100%;
-    background-color: var(--light-gray);
-    margin-bottom: 10px;
     padding: 5px 5px 0px 5px;
-    border-bottom: solid 0.5px;
-    border-left: solid 0.5px;
-    border-bottom-left-radius: 10px;
-    border-color: var(--dark-blue);
     font-weight: bold;
 }
 
@@ -343,13 +349,10 @@ dd .talk-timeplace {
     text-align: left;
     font-size: 15px;
     font-family: var(--font-family);
-    margin-bottom: 10px;
     padding: 5px 0px 0px 5px;
     border: none;
     border-radius: 5px;
     display: grid;
-    grid-template-columns: 90% 10%;
-    grid-column-gap: 0px;
 }
 
 .content {
@@ -367,7 +370,6 @@ dd .talk-timeplace {
     color: black;
     background-color: var(--light-gray);
     width: 95%;
-    padding-top: 5px;
     font-weight: normal;
 }
 
@@ -385,16 +387,25 @@ dd .talk-timeplace {
     padding-right: 5px;
 }
 
+.summary--title {
+    display: flex;
+}
+
 .icon {
     width: 100%;
-    text-align: right;
+    align-items: flex-start;
+}
+
+#publication-link {
+    text-decoration: none;
+    padding-left: 5px;
 }
 
 .external-link-icon {
-    width: 100%;
-    margin-right: 10px;
-    min-width: 10px;
-    max-width: 40px;
+    min-width: 1em;
+    max-width: 1em;
+    margin-left: 1em;
+    float: left;
 }
 
 .blog-title {

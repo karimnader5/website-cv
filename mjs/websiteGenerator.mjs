@@ -2,91 +2,31 @@ import cvData from './cvData.mjs';
 
 document.getElementById('publications').innerHTML = `
 
-    <h2>Publications <p>(Click to see the abstract.)</p></h2> 
-    <h3>Philosophical Publications</h3>
-
+    <h2>Selected Publications <p>(Click to see the abstract.)</p></h2> 
+    <ol>
     ${cvData.publications
-        .filter((item) => item.type == 'philosophy')
+        .filter((item) => item.type == 'philosophy' || item.type == 'empirical')
+        .sort((a, b) => b.date - a.date)
         .map(function (publication) {
             let link = `
-                <div class="icon">
-                    <a id="publication-link" href=${publication.link} target="_blank">
-                    <img class="external-link-icon" src="pictures/link2.png" alt="external-link"></a>
-                </div> `;
-            return `
+                    <a id="publication-link" href=${publication.link} target="_blank">&#128279</a>`;
+            return `<li>
         <details class="collapsible-head">
         <summary class="collapsible">
             <div class="summary--info">
-                ${publication.title}
+                <div class="summary--title"><span>${publication.title}</span>
+                ${publication.link ? link : ''}</div>
                 <span class="info"><em>${
                     publication.info
                 }</em>, ${publication.date}</span>
             </div>
-            ${publication.link ? link : ''}
         </summary>
         <div class="content">
         <p>${publication.abstract}</p>        
         </div></details>
-        `;
+        </li>`;
         })
-        .join('')}
-
-    <h3>Empirical Work</h3>
-
-    ${cvData.publications
-        .filter((item) => item.type == 'empirical')
-        .map(function (publication) {
-            let link = `
-                <div class="icon">
-                    <a id="publication-link" href=${publication.link} target="_blank">
-                    <img class="external-link-icon" src="pictures/link2.png" alt="external-link"></a>
-                </div> `;
-            let regex = /(Nader, K.)/g;
-            return `
-        <details class="collapsible-head">
-        <summary class="collapsible">
-            <div class="summary--info">
-                ${publication.title}
-                <span class="info">${
-                    publication.conference
-                        ? publication.info
-                        : publication.info.italics()
-                }, ${publication.date}</span>
-                <span class="publication-authors">Authors:  ${publication.authors.replace(
-                    regex,
-                    '<u>$1</u>'
-                )}</span>
-            </div>
-            ${publication.link ? link : ''}
-        </summary>
-        <div class="content">
-        <p class="publication-abstract">${publication.abstract}</p>
-        </div></details> `;
-        })
-        .join('')}
-
-`;
-
-/* document.getElementById('research-funding').innerHTML = `
-
-    <details><summary class="subtitle button">Research Funding</summary>
-
-    <dl>
-    ${cvData.awards
-        .map(function (award) {
-            return `<dt>${award.title}</dt>
-        <dd><span class="time">${award.date}</span><span class="amount"> ${award.amount}</span></dd>
-        `;
-        })
-        .join('')}
-    </dl>
-    </details>
-
-    <div class="plato-aristotle">
-    <img display="block" src="pictures/plato-aristotle.png" alt="plato and aristotles">
-    </div>
-
-`; */
+        .join('')}</ol>`;
 
 document.getElementById('talks').innerHTML = `
 

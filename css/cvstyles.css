@@ -12,6 +12,15 @@ body {
     margin: auto;
     max-width: 900px;
     margin-bottom: 30px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.publication--title,
+.presentation--title,
+h4,
+h5,
+h6 {
+    font-weight: bold;
 }
 
 .row {
@@ -51,6 +60,11 @@ h5 {
     margin: 0px;
 }
 
+.col-2,
+.col-3 {
+    white-space: nowrap;
+}
+
 .other--teaching--info,
 .service--info {
     margin-top: -0.2em;
@@ -85,6 +99,10 @@ section {
     gap: 0px;
 }
 
+.reference {
+    padding-bottom: 10px;
+}
+
 section h6 {
     margin-bottom: 0px;
 }
@@ -111,6 +129,7 @@ section a:hover {
 }
 
 .presentation--date {
+    padding-left: 10px;
     margin-left: -20px;
 }
 

@@ -86,11 +86,13 @@ document.getElementById('education').innerHTML = `
 
 document.getElementById('publications').innerHTML = `
 
-    <h3 class="title row">Publications</h3>
+    <h3 class="title row">Selected Publications</h3>
     <ol>
-    <h4 class="subtitle row">Philosophy</h4>
         ${cvData.publications
-            .filter((item) => item.type == 'philosophy')
+            .filter(
+                (item) => item.type == 'philosophy' || item.type == 'empirical'
+            )
+            .sort((a, b) => b.date - a.date)
             .map(function (publication) {
                 let regex = /(Nader, K.)/g;
                 return `
@@ -110,34 +112,6 @@ document.getElementById('publications').innerHTML = `
                 <div>
                 </li> 
                     `;
-            })
-            .join('')}
-
-        <h4 class="subtitle row">Empirical research</h4>
-        
-        ${cvData.publications
-            .filter((item) => item.type == 'empirical')
-            .map(function (publication) {
-                let regex = /(Nader, K.)/g;
-                return `
-            <li>
-            <div class="row">
-            ${
-                publication.link
-                    ? `<a href=${publication.link} target="_blank">`
-                    : ''
-            }
-            <h6 class="publication--title col-12">${publication.title}</h6></a> 
-            <span class="publication--authors col-12">Authors: ${publication.authors.replace(
-                regex,
-                '<u>$1</u>'
-            )}</span>
-            <span class="publication--info col-12">(${
-                publication.date
-            }). ${publication.conference ? publication.info : publication.info.italics()}${publication.issue ? ', ' + publication.issue : ''}.</span>
-            <div>
-            </li>
-        `;
             })
             .join('')}
 
@@ -390,7 +364,7 @@ document.getElementById('skills').innerHTML = `
 document.getElementById('references').innerHTML = `
 
     <h3 class="title row">References</h3>
-    <div class="row">
+    <div class="row references">
     ${cvData.references
         .map(function (reference) {
             return `
