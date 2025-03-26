@@ -10,12 +10,21 @@ document.getElementById('publications').innerHTML = `
         .map(function (publication) {
             let link = `
                     <a id="publication-link" href=${publication.link} target="_blank">&#128279</a>`;
+            let regex = /(Nader, K.)/g;
+            let authors = publication.authors
+                ? `
+                    <span class="publication--authors">Authors: ${publication.authors.replace(
+                        regex,
+                        '<u>$1</u>'
+                    )}</span>`
+                : '';
             return `<li>
         <details class="collapsible-head">
         <summary class="collapsible">
             <div class="summary--info">
                 <div class="summary--title"><span>${publication.title}</span>
                 ${publication.link ? link : ''}</div>
+                ${publication.authors ? authors : ''}
                 <span class="info"><em>${
                     publication.info
                 }</em>, ${publication.date}</span>

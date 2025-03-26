@@ -95,6 +95,13 @@ document.getElementById('publications').innerHTML = `
             .sort((a, b) => b.date - a.date)
             .map(function (publication) {
                 let regex = /(Nader, K.)/g;
+                let authors = publication.authors
+                    ? `
+                    <span class="publication--authors">Authors: ${publication.authors.replace(
+                        regex,
+                        '<u>$1</u>'
+                    )}</span>`
+                    : '';
                 return `
                 <li>
                 <div class="row">
@@ -106,6 +113,7 @@ document.getElementById('publications').innerHTML = `
                 <h6 class="publication--title col-12">${
                     publication.title
                 }</h6> </a>
+                ${publication.authors ? authors : ''}
                 <span class="publication--info col-12">(${
                     publication.date
                 }). <em>${publication.info}</em>${publication.issue ? ', ' + publication.issue : ''}.</span>

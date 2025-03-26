@@ -373,12 +373,11 @@ dd .talk-timeplace {
     font-weight: normal;
 }
 
-.publication-authors {
+.publication--authors {
     display: block;
     color: black;
     background-color: var(--light-gray);
     width: 95%;
-    padding-top: 5px;
     font-weight: normal;
 }
 

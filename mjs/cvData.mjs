@@ -32,6 +32,13 @@ export default {
 
     publications: [
         {
+            title: 'No Laughing Matter',
+            date: 2024,
+            info: 'American Society for Aesthetics Newsletter',
+            type: 'blog',
+            link: 'https://cdn.ymaws.com/aesthetics-online.org/resource/resmgr/articles/Nader_44.3.pdf',
+        },
+        {
             title: 'The gamification of dating online',
             date: 2024,
             info: 'Theoria',
@@ -47,6 +54,7 @@ export default {
             type: 'blog',
             link: 'https://aestheticsforbirds.com/2024/05/17/tiki-escapism-without-appropriation/',
         },
+
         {
             title: 'Virtual fictional actions',
             date: '2024',
@@ -475,6 +483,10 @@ export default {
         ],
         profession: {
             reviews: [
+                {
+                    title: 'Nous',
+                    number: 1,
+                },
                 {
                     title: 'Metaphysics',
                     number: 3,
